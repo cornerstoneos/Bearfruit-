@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0085CA">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Bear Fruit">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEAR FRUIT OS</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #0085CA;
+    --gold-light: #41B6E6;
+    --cream: #EDF4FA;
+    --ink: #060A0F;
+    --charcoal: #0D1520;
+    --mid: #1A2535;
+    --muted: #4A6080;
+    --green: #00A878;
+    --red: #C0392B;
+    --line: rgba(0,133,202,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    padding: 0 0 80px;
+    background-image:
+      radial-gradient(ellipse at 20% 0%, rgba(0,133,202,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 100%, rgba(0,133,202,0.04) 0%, transparent 50%);
+  }
+
+  /* HEADER */
+  .masthead {
+    border-bottom: 1px solid var(--gold);
+    padding: 32px 24px 20px;
+    text-align: center;
+    position: relative;
+  }
+  .masthead::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 16px;
+  }
+  .eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(42px, 10vw, 72px);
+    letter-spacing: 0.05em;
+    color: var(--cream);
+    line-height: 1;
+  }
+  .subhead {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .date-strip {
+    margin-top: 16px;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  /* DATE NAV */
+  .date-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .date-nav button {
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--gold);
+    width: 32px; height: 32px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+    font-family: 'DM Mono', monospace;
+  }
+  .date-nav button:hover { border-color: var(--gold); background: rgba(0,133,202,0.08); }
+  #current-date {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    color: var(--cream);
+    min-width: 200px;
+    text-align: center;
+  }
+
+  /* OS LAUNCHER */
+  .os-launcher {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--line);
+    background: var(--ink);
+  }
+  .os-btn {
+    flex: 1;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    border-right: 1px solid var(--line);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .os-btn:last-child { border-right: none; }
+  .os-btn:hover { background: rgba(0,133,202,0.06); }
+  .os-btn-icon { font-size: 18px; }
+  .os-logo-img { width:32px;height:32px;object-fit:contain;border-radius:6px; }
+  .os-btn-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.3;
+    text-align: center;
+  }
+  .os-btn:hover .os-btn-label { color: var(--gold); }
+
+  /* DAILY JOURNAL */
+  .daily-journal {
+    margin-bottom: 24px;
+    border: 1px solid rgba(0,133,202,0.25);
+    background: var(--charcoal);
+  }
+  .journal-header {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .journal-header-label {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    flex: 1;
+  }
+  .journal-char-count {
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  .journal-textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--cream);
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    line-height: 1.8;
+    padding: 14px;
+    resize: none;
+    min-height: 120px;
+    outline: none;
+  }
+  .journal-textarea::placeholder {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* MANTRA OVERLAY */
+  .mantra-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(6,10,15,0.96);
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .mantra-overlay.open { display: flex; }
+  .mantra-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    width: 36px; height: 36px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'DM Mono', monospace;
+  }
+  .mantra-label {
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+  .mantra-text {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 5vw, 28px);
+    color: var(--cream);
+    line-height: 1.6;
+    max-width: 520px;
+    margin-bottom: 12px;
+  }
+  .mantra-context {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 36px;
+    font-style: italic;
+    max-width: 400px;
+  }
+  .mantra-nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .mantra-btn {
+    padding: 10px 24px;
+    background: rgba(0,133,202,0.12);
+    border: 1px solid var(--line);
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .mantra-btn:hover { background: rgba(0,133,202,0.22); border-color: var(--gold); }
+  .mantra-dots {
+    display: flex; gap: 6px; margin-top: 24px;
+  }
+  .mantra-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--mid); transition: background 0.2s;
+  }
+  .mantra-dot.active { background: var(--gold); }
+  .mantra-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(0,133,202,0.08);
+    border: 1px solid var(--line);
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+  }
+  .mantra-trigger:hover { background: rgba(0,133,202,0.15); }
+  .mantra-trigger-icon { font-size: 14px; }
+
+  /* ── POWER 5 ── */
+  .power5-section {
+    margin-bottom: 24px;
+    border: 1px solid rgba(0,133,202,0.3);
+    background: var(--charcoal);
+    position: relative;
+    overflow: hidden;
+  }
+  .power5-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), transparent);
+  }
+  .power5-header {
+    padding: 14px 16px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+  }
+  .power5-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+  }
+  .power5-grade {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    line-height: 1;
+    min-width: 32px;
+    text-align: center;
+    transition: color 0.3s;
+  }
+  .power5-grade.grade-a { color: var(--green); text-shadow: 0 0 12px rgba(0,168,120,0.4); }
+  .power5-grade.grade-b { color: var(--gold-light); }
+  .power5-grade.grade-c { color: #f59e0b; }
+  .power5-grade.grade-f { color: var(--red); }
+  .power5-items { padding: 6px 0; }
+  .p5-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.15s;
+    border-bottom: 1px solid var(--line);
+  }
+  .p5-item:last-child { border-bottom: none; }
+  .p5-item:hover { background: rgba(0,133,202,0.05); }
+  .p5-item.done { background: rgba(0,133,202,0.06); }
+  .p5-circle {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    transition: all 0.2s;
+    background: var(--mid);
+  }
+  .p5-item.done .p5-circle {
+    border-color: var(--gold);
+    background: rgba(0,133,202,0.15);
+    box-shadow: 0 0 10px rgba(0,133,202,0.2);
+  }
+  .p5-info { flex: 1; }
+  .p5-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 2px;
+    transition: color 0.2s;
+  }
+  .p5-item.done .p5-name { color: var(--gold-light); }
+  .p5-sub { font-size: 10px; color: var(--muted); letter-spacing: 0.05em; }
+  .p5-check {
+    width: 20px; height: 20px;
+    border: 1px solid var(--muted);
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    color: var(--gold);
+    transition: all 0.2s;
+  }
+  .p5-item.done .p5-check {
+    border-color: var(--gold);
+    background: rgba(0,133,202,0.2);
+  }
+  .p5-truth {
+    padding: 10px 16px;
+    font-size: 10px;
+    color: var(--muted);
+    font-style: italic;
+    letter-spacing: 0.05em;
+    border-top: 1px solid var(--line);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+
+  /* ── DEPOSITS ── */
+  .deposits-section {
+    margin-bottom: 24px;
+    border: 1px solid rgba(0,133,202,0.2);
+    background: var(--charcoal);
+  }
+  .deposits-header {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .deposits-label {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+  }
+  .deposits-add-btn {
+    padding: 4px 12px;
+    background: rgba(0,133,202,0.1);
+    border: 1px solid var(--line);
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .deposits-add-btn:hover { background: rgba(0,133,202,0.2); }
+  .deposits-list { max-height: 280px; overflow-y: auto; }
+  .deposit-entry {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .deposit-entry:last-child { border-bottom: none; }
+  .deposit-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .deposit-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: var(--cream);
+    line-height: 1.7;
+    font-style: italic;
+  }
+  .deposit-empty {
+    padding: 24px 16px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* ── DEPOSIT MODAL ── */
+  .deposit-modal-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(6,10,15,0.92);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .deposit-modal-overlay.open { display: flex; }
+  .deposit-modal {
+    background: var(--charcoal);
+    border: 1px solid rgba(0,133,202,0.3);
+    width: min(100%, 520px);
+    padding: 24px;
+  }
+  .deposit-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+  }
+  .deposit-modal textarea {
+    width: 100%;
+    background: var(--mid);
+    border: 1px solid var(--line);
+    color: var(--cream);
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    line-height: 1.8;
+    padding: 14px;
+    resize: none;
+    min-height: 180px;
+    outline: none;
+    margin-bottom: 14px;
+  }
+  .deposit-modal textarea::placeholder { color: var(--muted); font-style: italic; }
+  .deposit-save-btn {
+    width: 100%;
+    padding: 13px;
+    background: rgba(0,133,202,0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .deposit-save-btn:hover { background: rgba(0,133,202,0.25); }
+
+  /* ── FAILURE CHECK ── */
+  .failure-check {
+    margin-bottom: 24px;
+    border: 1px solid rgba(192,57,43,0.2);
+    background: rgba(192,57,43,0.04);
+    padding: 16px;
+  }
+  .failure-check-header {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--red);
+    font-family: 'DM Mono', monospace;
+    margin-bottom: 4px;
+  }
+  .failure-check-sub {
+    font-size: 10px;
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .failure-items { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .failure-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 6px 0;
+  }
+  .failure-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--muted);
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+  .failure-item.flagged .failure-dot {
+    background: var(--red);
+    border-color: var(--red);
+    box-shadow: 0 0 6px rgba(192,57,43,0.4);
+  }
+  .failure-item span {
+    font-size: 12px;
+    color: var(--muted);
+    transition: color 0.2s;
+  }
+  .failure-item.flagged span { color: var(--cream); }
+  .failure-truth {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.7;
+    border-top: 1px solid rgba(192,57,43,0.15);
+    padding-top: 12px;
+  }
+
+  /* ── BEAR FRUIT HEADER LOGO ── */
+  .bear-logo {
+    width: 42px; height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0,133,202,0.3));
+  }
+
+  /* GOVERNOR BANNER */
+  .governor {
+    padding: 10px 24px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--charcoal);
+    min-height: 44px;
+    transition: background 0.4s;
+  }
+  .governor.god-block    { background: rgba(192,57,43,0.12); border-bottom-color: rgba(192,57,43,0.25); }
+  .governor.trading-block { background: rgba(0,133,202,0.1); border-bottom-color: rgba(0,133,202,0.25); }
+  .governor.bowman-block  { background: rgba(74,96,128,0.12); border-bottom-color: rgba(74,96,128,0.2); }
+  .governor.prolific-block{ background: rgba(0,133,202,0.08); border-bottom-color: rgba(0,133,202,0.2); }
+  .governor.review-block  { background: rgba(65,182,230,0.08); border-bottom-color: rgba(65,182,230,0.2); }
+  .governor.free-block    { background: var(--charcoal); }
+  .governor.cornerstone-block { background: rgba(168,85,247,0.08); border-bottom-color: rgba(168,85,247,0.2); }
+  .gov-dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    box-shadow: 0 0 6px currentColor;
+  }
+  .gov-mode {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  .gov-divider { width: 1px; height: 14px; background: var(--line); flex-shrink: 0; }
+  .gov-message {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    flex: 1;
+  }
+  .gov-time {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+  }
+
+  /* IDENTITY BANNER */
+  .identity-banner {
+    margin: 0;
+    background: var(--charcoal);
+    border-bottom: 1px solid var(--line);
+    padding: 16px 24px;
+  }
+  .identity-banner h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .identity-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .identity-item {
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.4;
+  }
+  .identity-item::before { content: '—'; color: var(--gold); flex-shrink: 0; }
+
+  /* SCORE BAR */
+  .score-bar {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .score-label { font-size: 10px; letter-spacing: 0.2em; color: var(--muted); text-transform: uppercase; }
+  .score-track { flex: 1; height: 4px; background: var(--mid); position: relative; }
+  .score-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+    width: 0%;
+  }
+  .score-pct {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    min-width: 48px;
+    text-align: right;
+  }
+
+  /* TABS */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--line);
+    padding: 0 24px;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .tab {
+    padding: 12px 16px;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    white-space: nowrap;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-family: 'DM Mono', monospace;
+  }
+  .tab:hover { color: var(--cream); }
+  .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* PANELS */
+  .panel { display: none; padding: 24px; }
+  .panel.active { display: block; }
+
+  /* PILLAR */
+  .pillar {
+    margin-bottom: 28px;
+    border: 1px solid var(--line);
+    background: var(--charcoal);
+  }
+  .pillar-header {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+    user-select: none;
+  }
+  .pillar-icon { font-size: 16px; }
+  .pillar-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    flex: 1;
+  }
+  .pillar-count {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  .pillar-items { padding: 8px 0; }
+
+  /* TASK ROW */
+  .task {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.15s;
+    position: relative;
+  }
+  .task:hover { background: rgba(0,133,202,0.04); }
+  .task.checked .task-label { color: var(--muted); text-decoration: line-through; }
+  .task.checked .task-label::after {
+    content: '';
+    position: absolute;
+    left: 44px;
+    right: 16px;
+    top: 50%;
+    height: 1px;
+    background: var(--muted);
+    opacity: 0.4;
+  }
+  .checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--muted);
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    font-size: 10px;
+    color: var(--gold);
+  }
+  .task.checked .checkbox {
+    border-color: var(--gold);
+    background: rgba(0,133,202,0.15);
+  }
+  .task-label {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--cream);
+    transition: color 0.2s;
+  }
+  .task-badge {
+    font-size: 9px;
+    padding: 2px 6px;
+    background: rgba(0,133,202,0.12);
+    color: var(--gold);
+    border: 1px solid rgba(0,133,202,0.2);
+    margin-left: 6px;
+    letter-spacing: 0.1em;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  /* RULES SECTION */
+  .rules-section { margin-bottom: 28px; }
+  .rules-section h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .rule-card {
+    border: 1px solid var(--line);
+    background: var(--charcoal);
+    padding: 16px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .rule-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: rgba(0,133,202,0.08);
+    position: absolute;
+    top: -4px;
+    right: 12px;
+    line-height: 1;
+  }
+  .rule-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: var(--cream);
+    margin-bottom: 6px;
+  }
+  .rule-desc { font-size: 11px; color: var(--muted); line-height: 1.6; }
+  .rule-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--gold-light);
+    margin-top: 8px;
+    padding-left: 12px;
+    border-left: 2px solid var(--gold);
+  }
+
+  /* WEEKLY DAYS */
+  .week-grid { display: flex; flex-direction: column; gap: 12px; }
+  .day-card {
+    border: 1px solid var(--line);
+    background: var(--charcoal);
+  }
+  .day-header {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .day-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+  }
+  .day-mode {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+  .day-today .day-name { color: var(--gold); }
+  .day-today { border-color: rgba(0,133,202,0.4); }
+  .day-items { padding: 10px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .day-item {
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    gap: 8px;
+    line-height: 1.4;
+  }
+  .day-item::before { content: '◆'; font-size: 6px; color: var(--gold); margin-top: 4px; flex-shrink: 0; }
+
+  /* FINANCE / RECURRING */
+  .system-card {
+    border: 1px solid var(--line);
+    background: var(--charcoal);
+    margin-bottom: 12px;
+    padding: 16px;
+  }
+  .system-card h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .system-item { font-size: 11px; color: var(--muted); margin-bottom: 6px; line-height: 1.5; padding-left: 12px; border-left: 1px solid var(--line); }
+
+  /* NOTE INPUT */
+  .note-area {
+    margin-top: 20px;
+    border: 1px solid var(--line);
+    background: var(--charcoal);
+  }
+  .note-area textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--cream);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 14px;
+    resize: none;
+    min-height: 80px;
+    outline: none;
+    line-height: 1.6;
+  }
+  .note-area textarea::placeholder { color: var(--muted); }
+  .note-label {
+    padding: 8px 14px;
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+  }
+
+  /* RESET BTN */
+  .reset-btn {
+    display: block;
+    margin: 20px 0 0;
+    padding: 12px 20px;
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s;
+  }
+  .reset-btn:hover { border-color: var(--red); color: var(--red); }
+
+  /* TRUTH BANNER */
+  .truth-banner {
+    margin: 28px 0;
+    padding: 20px;
+    border: 1px solid rgba(0,133,202,0.3);
+    background: rgba(0,133,202,0.04);
+    text-align: center;
+  }
+  .truth-banner p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--gold-light);
+    line-height: 1.8;
+  }
+  .truth-banner strong {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    color: var(--cream);
+    margin-top: 8px;
+  }
+
+  /* STREAK */
+  .streak-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+  }
+  .streak-dot {
+    width: 10px; height: 10px;
+    border: 1px solid var(--line);
+    background: var(--mid);
+    transition: all 0.2s;
+  }
+  .streak-dot.done { background: var(--gold); border-color: var(--gold-light); }
+
+  @media (max-width: 400px) {
+    .tabs { gap: 0; }
+    .tab { padding: 12px 10px; font-size: 8px; }
+  }
+
+  .goals-section{margin-bottom:20px;background:var(--charcoal);border:1px solid rgba(0,133,202,0.4);position:relative;overflow:hidden;}
+  .goals-section::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#e05555,#0085CA,#00A878,#a855f7);}
+  .goals-header{display:flex;align-items:center;gap:16px;padding:14px 16px 10px;border-bottom:1px solid var(--line);}
+  .goals-countdown-wrap{display:flex;align-items:baseline;gap:8px;flex-shrink:0;}
+  .goals-days{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;color:#0085CA;text-shadow:0 0 20px rgba(0,133,202,0.5);letter-spacing:0.02em;}
+  .goals-days-label{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:0.2em;color:var(--muted);text-transform:uppercase;line-height:1.4;}
+  .goals-title-wrap{flex:1;}
+  .goals-eyebrow{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:0.15em;color:var(--cream);}
+  .goals-verse{font-family:'Playfair Display',serif;font-size:11px;color:var(--muted);font-style:italic;margin-top:2px;}
+  .goals-list{padding:10px 16px 14px;display:flex;flex-direction:column;gap:12px;}
+  .goal-row{display:flex;align-items:center;gap:10px;}
+  .goal-info{width:145px;flex-shrink:0;}
+  .goal-label{display:block;font-size:12px;font-weight:700;color:var(--cream);letter-spacing:0.02em;}
+  .goal-val{display:block;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-top:1px;}
+  .goal-track{flex:1;height:6px;background:var(--mid);border-radius:3px;overflow:hidden;}
+  .goal-fill{height:100%;border-radius:3px;width:0%;transition:width 0.5s ease;}
+  .prolific-fill{background:linear-gradient(90deg,#0085CA,#41B6E6);}
+  .cornerstone-fill{background:linear-gradient(90deg,#a855f7,#d4a8ff);}
+  .blc-fill{background:linear-gradient(90deg,#00A878,#7effc5);}
+  .ten-fill{background:linear-gradient(90deg,#0085CA,#41B6E6);}
+  .five-fill{background:linear-gradient(90deg,#e05555,#ff9999);}
+  .goal-actions{display:flex;gap:4px;align-items:center;flex-shrink:0;}
+  .goal-btn{width:30px;height:30px;background:var(--mid);border:1px solid var(--line);color:var(--cream);font-size:18px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:4px;transition:all 0.15s;font-family:'DM Mono',monospace;line-height:1;}
+  .goal-btn:hover{background:rgba(0,133,202,0.2);border-color:var(--gold);}
+  .goal-btn-add{color:var(--gold);border-color:rgba(0,133,202,0.3);}
+  .goal-input{width:72px;height:30px;background:var(--mid);border:1px solid var(--line);color:var(--cream);font-family:'DM Mono',monospace;font-size:11px;padding:0 8px;border-radius:4px;outline:none;text-align:center;}
+  /* BOLD OVERRIDES */
+  body{font-size:15px;}
+  .headline{font-size:clamp(52px,12vw,80px)!important;text-shadow:0 0 30px rgba(0,133,202,0.3);}
+  .eyebrow{font-size:11px!important;letter-spacing:0.4em!important;}
+  .subhead{font-size:14px!important;color:rgba(240,244,250,0.7)!important;}
+  .identity-item{font-size:13px!important;color:var(--cream)!important;opacity:0.9;font-weight:500;}
+  .governor{min-height:52px!important;border-bottom:2px solid var(--line)!important;}
+  .gov-mode{font-size:11px!important;letter-spacing:0.25em!important;font-weight:700;}
+  .gov-message{font-size:13px!important;color:var(--cream)!important;opacity:0.9;font-weight:500;}
+  .gov-time{font-size:12px!important;font-weight:700;}
+  .score-track{height:6px!important;}
+  .score-pct{font-size:28px!important;font-weight:900!important;}
+  .tab{font-size:11px!important;letter-spacing:0.2em!important;padding:14px 16px!important;font-weight:700!important;}
+  .tab.active{border-bottom:3px solid var(--gold)!important;}
+  .pillar{border:1px solid rgba(0,133,202,0.2)!important;margin-bottom:16px;}
+  .pillar-header{padding:14px 16px!important;background:rgba(0,133,202,0.04);}
+  .pillar-title{font-size:17px!important;letter-spacing:0.1em!important;font-weight:800!important;}
+  .task{padding:12px 16px!important;}
+  .task-label{font-size:14px!important;color:var(--cream)!important;font-weight:500;}
+  .checkbox{width:20px!important;height:20px!important;border:2px solid var(--muted)!important;font-size:13px!important;}
+  .task.checked .checkbox{border-color:var(--gold)!important;background:rgba(0,133,202,0.2)!important;}
+  .p5-name{font-size:14px!important;font-weight:800!important;}
+  .p5-circle{width:42px!important;height:42px!important;font-size:18px!important;border:2px solid var(--line)!important;}
+  .p5-item.done .p5-circle{box-shadow:0 0 16px rgba(0,133,202,0.4)!important;}
+  .p5-check{width:24px!important;height:24px!important;font-size:13px!important;font-weight:900!important;border:2px solid var(--muted)!important;}
+  .power5-eyebrow{font-size:11px!important;letter-spacing:0.35em!important;font-weight:700!important;}
+  .power5-grade{font-size:36px!important;}
+  .mantra-text{font-size:clamp(22px,5vw,34px)!important;font-weight:800!important;line-height:1.4!important;color:#fff!important;}
+  .mantra-context{font-size:13px!important;}
+  .mantra-label{font-size:11px!important;letter-spacing:0.4em!important;font-weight:700!important;}
+  .mantra-trigger{font-size:11px!important;letter-spacing:0.25em!important;padding:14px 16px!important;font-weight:700!important;border:1px solid rgba(0,133,202,0.4)!important;}
+  .journal-header-label{font-size:11px!important;letter-spacing:0.35em!important;font-weight:700!important;}
+  .journal-textarea{font-size:15px!important;}
+  .deposit-text{font-size:13px!important;line-height:1.8!important;}
+  .failure-item span{font-size:14px!important;font-weight:500!important;}
+  .goals-days{text-shadow:0 0 24px rgba(0,133,202,0.6)!important;}
+
+
+  /* ── IDENTITY TAB ── */
+  .identity-tab { display:flex; flex-direction:column; gap:0; }
+
+  /* Declaration section */
+  .declaration-section {
+    padding: 20px 24px;
+    border-bottom: 2px solid var(--line);
+    background: rgba(201,168,76,0.03);
+  }
+  .declaration-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px; letter-spacing: 0.35em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .declaration-eyebrow::before { content:''; width:16px; height:1px; background:var(--gold); }
+  .declaration-statements { display: flex; flex-direction: column; gap: 10px; }
+  .declaration-line {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(18px, 4vw, 26px);
+    letter-spacing: 0.08em;
+    color: var(--cream);
+    line-height: 1.1;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,133,202,0.1);
+    transition: color 0.2s;
+  }
+  .declaration-line:last-child { border-bottom: none; }
+  .declaration-line.highlight { color: var(--gold); }
+  .declaration-verse {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  /* Frames section */
+  .frames-section { flex: 1; }
+  .frames-header {
+    padding: 14px 24px 10px;
+    border-bottom: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .frames-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  .frames-counter {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; color: var(--muted); letter-spacing: 0.1em;
+  }
+  .frames-counter span { color: var(--gold); }
+
+  /* Frame card */
+  .frame-card { padding: 0; }
+  .frame-card-header {
+    padding: 16px 24px 12px;
+    border-bottom: 1px solid var(--line);
+    position: relative; overflow: hidden;
+  }
+  .frame-bg-num {
+    position: absolute; top: -10px; right: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px; line-height: 1;
+    color: rgba(201,168,76,0.05);
+    pointer-events: none; letter-spacing: -0.02em;
+  }
+  .frame-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 6px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .frame-badge::before { content:''; width:12px; height:1px; background:var(--gold); }
+  .frame-card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(22px, 4.5vw, 34px);
+    letter-spacing: 0.06em; color: var(--cream); line-height: 1;
+    margin-bottom: 4px;
+  }
+  .frame-card-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic; font-size: 12px; color: var(--muted);
+  }
+
+  /* Frame view tabs */
+  .frame-view-tabs {
+    display: flex; border-bottom: 1px solid var(--line); padding: 0 24px;
+  }
+  .frame-view-tab {
+    padding: 9px 14px;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--muted); cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    background: none; border-left: none; border-right: none; border-top: none;
+  }
+  .frame-view-tab:hover { color: var(--cream); }
+  .frame-view-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* Frame view content */
+  .frame-view-content {
+    padding: 16px 24px; max-height: 280px; overflow-y: auto;
+  }
+  .frame-view-content::-webkit-scrollbar { width: 3px; }
+  .frame-view-content::-webkit-scrollbar-thumb { background: var(--border); }
+
+  .fv-points { display: flex; flex-direction: column; gap: 10px; }
+  .fv-point {
+    display: flex; gap: 12px;
+    padding: 12px 14px;
+    background: rgba(201,168,76,0.04);
+    border: 1px solid rgba(201,168,76,0.1);
+    border-left: 3px solid var(--gold);
+  }
+  .fv-num { font-family:'DM Mono',monospace; font-size:10px; color:var(--gold); flex-shrink:0; margin-top:1px; }
+  .fv-text { font-size: 13px; font-weight: 500; line-height: 1.65; color: var(--cream); }
+
+  .fv-block {
+    padding: 16px; border: 1px solid; margin-bottom: 4px;
+  }
+  .fv-block.scripture { background: rgba(224,85,85,0.05); border-color: rgba(224,85,85,0.2); }
+  .fv-block.neuro { background: rgba(0,133,202,0.05); border-color: rgba(0,133,202,0.2); }
+  .fv-block.sports { background: rgba(0,168,120,0.05); border-color: rgba(0,168,120,0.2); }
+  .fv-block-label {
+    font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.25em;
+    text-transform: uppercase; margin-bottom: 10px; font-weight: 700;
+  }
+  .fv-block.scripture .fv-block-label { color: #ff9999; }
+  .fv-block.neuro .fv-block-label { color: var(--blue); }
+  .fv-block.sports .fv-block-label { color: var(--green); }
+  .fv-block-ref { font-size: 10px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 8px; font-family:'DM Mono',monospace; }
+  .fv-block-main { font-family:'Playfair Display',serif; font-style:italic; font-size:13px; line-height:1.75; color:var(--cream); margin-bottom:8px; }
+  .fv-block-sub { font-size: 12px; line-height: 1.7; color: #9ab0c8; }
+  .fv-key {
+    margin-top: 10px; padding: 9px 12px;
+    background: rgba(0,133,202,0.08); border-left: 2px solid var(--blue);
+    font-family: 'DM Mono', monospace; font-size: 10px; color: var(--blue); line-height: 1.5;
+  }
+  .fv-quote {
+    margin-top: 10px; padding: 10px 14px;
+    border-left: 3px solid var(--green);
+    font-family: 'Playfair Display', serif; font-style: italic;
+    font-size: 13px; color: var(--cream); line-height: 1.6;
+  }
+
+  /* Frame nav */
+  .frame-nav-strip {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 24px;
+    border-top: 1px solid var(--line);
+  }
+  .fnav-btn {
+    padding: 8px 18px;
+    background: none; border: 1px solid var(--border);
+    color: var(--muted); cursor: pointer;
+    font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .fnav-btn:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
+  .fnav-btn:disabled { opacity: 0.2; cursor: default; }
+  .fnav-dots { display: flex; gap: 5px; }
+  .fnav-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--dim); cursor: pointer; transition: all 0.2s;
+    border: none;
+  }
+  .fnav-dot.active { background: var(--gold); box-shadow: 0 0 5px var(--gold); }
+
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:8px;">
+    <img src="data:image/jpeg;base64,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" style="width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,133,202,0.4));">
+    <div>
+      <div class="eyebrow" style="text-align:left">Bear Fruit OS</div>
+      <div class="headline" style="text-align:left;font-size:clamp(32px,8vw,56px)">Bear Fruit</div>
+    </div>
+  </div>
+  <div class="subhead">Crafting my life — one day at a time</div>
+  <div class="date-strip" id="live-date"></div>
+</div>
+
+<div class="date-nav">
+  <button id="prev-day" title="Previous day">‹</button>
+  <div id="current-date"></div>
+  <button id="next-day" title="Next day">›</button>
+</div>
+
+<!-- OS LAUNCHER -->
+<div class="os-launcher">
+  <a class="os-btn" href="https://prolificgroup.netlify.app/" target="_blank" title="Prolific">
+    <img src="data:image/jpeg;base64,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" class="os-logo-img" alt="Prolific"/>
+    <span class="os-btn-label">Prolific</span>
+  </a>
+  <a class="os-btn" href="https://cornerstone-os.netlify.app/" target="_blank" title="Cornerstone OS">
+    <img src="data:image/jpeg;base64,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" class="os-logo-img" alt="Cornerstone"/>
+    <span class="os-btn-label">Cornerstone</span>
+  </a>
+  <a class="os-btn" href="https://blc-os-production.up.railway.app/" target="_blank" title="BLC Trading OS">
+    <img src="data:image/jpeg;base64,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" class="os-logo-img" alt="Black Lab"/>
+    <span class="os-btn-label">Black Lab</span>
+  </a>
+</div>
+
+<!-- GOVERNOR BANNER -->
+<div class="governor free-block" id="governor">
+  <div class="gov-dot" id="gov-dot" style="color:var(--muted);background:var(--muted)"></div>
+  <span class="gov-mode" id="gov-mode">Bear Fruit OS</span>
+  <div class="gov-divider"></div>
+  <span class="gov-message" id="gov-message">Good morning. What are you building today?</span>
+  <span class="gov-time" id="gov-time"></span>
+</div>
+
+<div class="identity-banner">
+  <h3>⚙ Core Identity — Read Daily</h3>
+  <div class="identity-items">
+    <div class="identity-item">I execute whether I feel like it or not</div>
+    <div class="identity-item">I operate like a fund manager</div>
+    <div class="identity-item">I build systems, not moods</div>
+    <div class="identity-item">I move first, confidence follows</div>
+    <div class="identity-item">I stay aligned with God throughout the day</div>
+  </div>
+</div>
+
+<div class="score-bar">
+  <span class="score-label">Daily Score</span>
+  <div class="score-track"><div class="score-fill" id="score-fill"></div></div>
+  <span class="score-pct" id="score-pct">0%</span>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="switchTab('daily')">Daily</button>
+  <button class="tab" onclick="switchTab('identity')">Identity</button>
+</div>
+
+<!-- DAILY PANEL -->
+<div class="panel active" id="panel-daily">
+
+  <!-- DEC 27 GOALS -->
+  <div class="goals-section">
+    <div class="goals-header">
+      <div class="goals-countdown-wrap">
+        <span class="goals-days" id="days-countdown">146</span>
+        <span class="goals-days-label">DAYS TO<br>DEC 27</span>
+      </div>
+      <div class="goals-title-wrap">
+        <div class="goals-eyebrow">ACTIVE GOALS</div>
+        <div class="goals-verse">Everything I write I reach — Hab 2:2</div>
+      </div>
+    </div>
+    <div class="goals-list">
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">Prolific Shoots</span><span class="goal-val" id="goal-val-shoots">0 / 60</span></div>
+        <div class="goal-track"><div class="goal-fill prolific-fill" id="goal-fill-shoots"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('shoots')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('shoots', 60)">+</button></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">Cornerstone Users</span><span class="goal-val" id="goal-val-users">0 / 65</span></div>
+        <div class="goal-track"><div class="goal-fill cornerstone-fill" id="goal-fill-users"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('users')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('users', 65)">+</button></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">BLC Capital</span><span class="goal-val" id="goal-val-blc">$0 / $3,000</span></div>
+        <div class="goal-track"><div class="goal-fill blc-fill" id="goal-fill-blc"></div></div>
+        <div class="goal-actions"><input type="number" class="goal-input" placeholder="$" onchange="setGoalAmount('blc', this.value)" /></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">$10K Challenge</span><span class="goal-val" id="goal-val-chal10">Day 26 / 100</span></div>
+        <div class="goal-track"><div class="goal-fill ten-fill" id="goal-fill-chal10" style="width:26%"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('chal10')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('chal10', 100)">+</button></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">$5K Challenge</span><span class="goal-val" id="goal-val-chal5">Day 0 / 100</span></div>
+        <div class="goal-track"><div class="goal-fill five-fill" id="goal-fill-chal5"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('chal5')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('chal5', 100)">+</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POWER 5 -->
+  <div class="power5-section">
+    <div class="power5-header">
+      <span class="power5-eyebrow">⚡ Power 5 — Daily Non-Negotiables</span>
+      <div class="power5-grade" id="p5-grade">—</div>
+    </div>
+    <div class="power5-items">
+      <div class="p5-item" id="p5-god" onclick="toggleP5('god')">
+        <div class="p5-circle" id="p5-circle-god">🙏</div>
+        <div class="p5-info">
+          <div class="p5-name">Worship / Word with God</div>
+          <div class="p5-sub">Prayer · Word · Alignment first</div>
+        </div>
+        <div class="p5-check" id="p5-check-god"></div>
+      </div>
+      <div class="p5-item" id="p5-body" onclick="toggleP5('body')">
+        <div class="p5-circle" id="p5-circle-body">💪</div>
+        <div class="p5-info">
+          <div class="p5-name">Work Out</div>
+          <div class="p5-sub">Movement as planned · No exceptions</div>
+        </div>
+        <div class="p5-check" id="p5-check-body"></div>
+      </div>
+      <div class="p5-item" id="p5-prolific" onclick="toggleP5('prolific')">
+        <div class="p5-circle" id="p5-circle-prolific">🎯</div>
+        <div class="p5-info">
+          <div class="p5-name">Prolific</div>
+          <div class="p5-sub">1 income-producing action · Outreach is the key</div>
+        </div>
+        <div class="p5-check" id="p5-check-prolific"></div>
+      </div>
+      <div class="p5-item" id="p5-cornerstone" onclick="toggleP5('cornerstone')">
+        <div class="p5-circle" id="p5-circle-cornerstone">🏗</div>
+        <div class="p5-info">
+          <div class="p5-name">Cornerstone / Even</div>
+          <div class="p5-sub">1 build action · Move it forward</div>
+        </div>
+        <div class="p5-check" id="p5-check-cornerstone"></div>
+      </div>
+      <div class="p5-item" id="p5-blacklab" onclick="toggleP5('blacklab')">
+        <div class="p5-circle" id="p5-circle-blacklab">📈</div>
+        <div class="p5-info">
+          <div class="p5-name">Black Lab</div>
+          <div class="p5-sub">Trading or study · One shot if setup is there</div>
+        </div>
+        <div class="p5-check" id="p5-check-blacklab"></div>
+      </div>
+    </div>
+    <div class="p5-truth">He who is faithful. Not he who succeeds — he who is faithful.</div>
+  </div>
+
+  <!-- DAILY JOURNAL -->
+  <div class="daily-journal">
+    <div class="journal-header">
+      <span class="journal-header-label">✦ Today's Word</span>
+      <span class="journal-char-count" id="journal-count">0 chars</span>
+    </div>
+    <textarea class="journal-textarea" id="daily-journal" placeholder="Write freely — a scripture, a thought, an intention, a declaration. This is yours."></textarea>
+  </div>
+
+  <!-- MANTRA TRIGGER -->
+  <button class="mantra-trigger" onclick="openMantra()">
+    <span class="mantra-trigger-icon">⚡</span>
+    <span>Trigger Response — tap when you need it</span>
+  </button>
+
+  <!-- FAITH -->
+  <div class="pillar">
+    <div class="pillar-header">
+      <span class="pillar-icon">🙏</span>
+      <span class="pillar-title">Faith</span>
+      <span class="pillar-count" id="count-faith"></span>
+    </div>
+    <div class="pillar-items" id="items-faith">
+      <div class="task" data-id="faith-1" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">Stay in the Spirit (prayer, Word, worship, sermons throughout day)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="pillar">
+    <div class="pillar-header">
+      <span class="pillar-icon">💪</span>
+      <span class="pillar-title">Body</span>
+      <span class="pillar-count" id="count-body"></span>
+    </div>
+    <div class="pillar-items" id="items-body">
+      <div class="task" data-id="body-1" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">100 pushups / 100 squats / plank sequence</span>
+      </div>
+      <div class="task" data-id="body-2" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">Walk — Margaret Pace Park or equivalent</span>
+      </div>
+      <div class="task" data-id="body-3" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">2 full bottles of water (64–80 oz minimum)</span>
+      </div>
+      <div class="task" data-id="body-4" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">Eat intentionally — NO autopilot fast food<br><span style="font-size:10px;color:#4A6080">(If eating out → grilled over fried, no fries/soda, water only)</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOWMAN -->
+  <div class="pillar">
+    <div class="pillar-header">
+      <span class="pillar-icon">📋</span>
+      <span class="pillar-title">Work — Bowman</span>
+      <span class="pillar-count" id="count-bowman"></span>
+    </div>
+    <div class="pillar-items" id="items-bowman">
+      <div class="task" data-id="bow-1" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">Previous day docs uploaded</span>
+      </div>
+      <div class="task" data-id="bow-2" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">Current notes logged</span>
+      </div>
+      <div class="task" data-id="bow-3" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">2–4 docs signed</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRADING -->
+  <div class="pillar" id="trading-pillar">
+    <div class="pillar-header">
+      <span class="pillar-icon">📈</span>
+      <span class="pillar-title">Trading <span style="font-size:11px;color:var(--muted);letter-spacing:0.1em">Tues–Fri</span></span>
+      <span class="pillar-count" id="count-trading"></span>
+    </div>
+    <div class="pillar-items" id="items-trading">
+      <div class="task" data-id="trd-1" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">10 min pre-market prep</span>
+      </div>
+      <div class="task" data-id="trd-2" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">Execute ONLY 1 trade <span class="task-badge">CONTINUATION FOCUS</span></span>
+      </div>
+      <div class="task" data-id="trd-3" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">10 min post-trade journal + screenshots</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROLIFIC -->
+  <div class="pillar">
+    <div class="pillar-header">
+      <span class="pillar-icon">🔑</span>
+      <span class="pillar-title">Prolific / Business</span>
+      <span class="pillar-count" id="count-prolific"></span>
+    </div>
+    <div class="pillar-items" id="items-prolific">
+      <div class="task" data-id="pro-1" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">1 meaningful action <span class="task-badge">PRIORITY: OUTREACH</span><br><span style="font-size:10px;color:var(--muted)">This is your unlock key. No excuses.</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEARNING -->
+  <div class="pillar">
+    <div class="pillar-header">
+      <span class="pillar-icon">🧠</span>
+      <span class="pillar-title">Learning — Micro, Not Macro</span>
+      <span class="pillar-count" id="count-learning"></span>
+    </div>
+    <div class="pillar-items" id="items-learning">
+      <div class="task" data-id="lrn-1" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">30–60 min focused learning (trading execution or business/AI implementation)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- EVEN / CORNERSTONE -->
+  <div class="pillar">
+    <div class="pillar-header">
+      <span class="pillar-icon">🏗</span>
+      <span class="pillar-title">Even / Cornerstone OS</span>
+      <span class="pillar-count" id="count-content"></span>
+    </div>
+    <div class="pillar-items" id="items-content">
+      <div class="task" data-id="cnt-1" onclick="toggle(this)">
+        <div class="checkbox"></div>
+        <span class="task-label">Work on the build — improve or ship one feature <span class="task-badge">MOVE IT FORWARD</span><br><span style="font-size:10px;color:var(--muted)">Every day it gets better. No skip days.</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEPOSITS -->
+  <div class="deposits-section">
+    <div class="deposits-header">
+      <span class="deposits-label">📖 Deposits — Guard the Good Deposit</span>
+      <button class="deposits-add-btn" onclick="openDeposit()">+ Add</button>
+    </div>
+    <div class="deposits-list" id="deposits-list"></div>
+  </div>
+
+  <!-- DAILY FAILURE CHECK -->
+  <div class="failure-check">
+    <div class="failure-check-header">⚠ Daily Failure Check</div>
+    <div class="failure-check-sub">If the day goes off — reset immediately. Same day, not tomorrow.</div>
+    <div class="failure-items">
+      <div class="failure-item" onclick="toggleFailure(this)">
+        <div class="failure-dot"></div>
+        <span>Did I skip God?</span>
+      </div>
+      <div class="failure-item" onclick="toggleFailure(this)">
+        <div class="failure-dot"></div>
+        <span>Did I break trading rules?</span>
+      </div>
+      <div class="failure-item" onclick="toggleFailure(this)">
+        <div class="failure-dot"></div>
+        <span>Did I avoid outreach?</span>
+      </div>
+      <div class="failure-item" onclick="toggleFailure(this)">
+        <div class="failure-dot"></div>
+        <span>Did I waste time scrolling?</span>
+      </div>
+    </div>
+    <div class="failure-truth">This isn't a schedule. This is your standard of operation.<br>You don't complete it perfectly — you return to it quickly when you slip.</div>
+  </div>
+
+  <!-- NOTES -->
+  <div class="note-area">
+    <textarea id="daily-notes" placeholder="Log today's wins, observations, adjustments..."></textarea>
+    <div class="note-label">Daily Notes</div>
+  </div>
+
+  <button class="reset-btn" onclick="resetDay()">↺ Reset Today's Checklist</button>
+
+</div>
+
+<div class="panel" id="panel-systems">
+
+  <div class="system-card">
+    <h4>💇 Grooming Schedule</h4>
+    <div class="system-item">Every 2–3 weeks — Haircut</div>
+    <div class="system-item">Every 2 months — Retwist + style</div>
+    <div class="system-item">Every 14–21 days — New cologne</div>
+  </div>
+
+  <div class="system-card">
+    <h4>💰 Finances</h4>
+    <div class="system-item">Rent — Half before the 5th, half ~14 days later</div>
+    <div class="system-item">Car $625 — Split half and half</div>
+    <div class="system-item">Daily — Allocate via 100-day challenges</div>
+  </div>
+
+  <div class="system-card">
+    <h4>🧹 Cleanliness</h4>
+    <div class="system-item">Sunday — Full reset (room)</div>
+    <div class="system-item">Thursday — Straighten + laundry</div>
+    <div class="system-item">Weekend — Clean both cars</div>
+  </div>
+
+  <div class="system-card">
+    <h4>🤝 Relationships</h4>
+    <div class="system-item">Parents — Weekly touchpoint</div>
+    <div class="system-item">Networking — 1/month (5K run already started — good)</div>
+  </div>
+
+  <!-- Outreach counter -->
+  <div class="system-card">
+    <h4>📊 Outreach Counter</h4>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:12px">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--gold);line-height:1" id="outreach-count">0</div>
+      <div style="font-size:10px;color:var(--muted);line-height:1.8">contacts<br>reached<br>/ 500</div>
+    </div>
+    <div class="streak-row" id="outreach-dots"></div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <button onclick="addOutreach()" style="flex:1;padding:10px;background:rgba(0,133,202,0.1);border:1px solid var(--gold);color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer">+ Add Contact</button>
+      <button onclick="removeOutreach()" style="padding:10px 14px;background:none;border:1px solid var(--line);color:var(--muted);font-family:'DM Mono',monospace;font-size:12px;cursor:pointer">−</button>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- IDENTITY PANEL -->
+<div class="panel" id="panel-identity">
+  <div class="identity-tab">
+
+    <!-- Declaration -->
+    <div class="declaration-section">
+      <div class="declaration-eyebrow">Who You Are — Read Daily</div>
+      <div class="declaration-statements">
+        <div class="declaration-line highlight">I am a finisher.</div>
+        <div class="declaration-line">I am a steward, not an owner.</div>
+        <div class="declaration-line">I execute whether I feel like it or not.</div>
+        <div class="declaration-line">I build systems, not moods.</div>
+        <div class="declaration-line">I move based on who I am becoming, not what I can do.</div>
+        <div class="declaration-line">I stay aligned with God throughout the day.</div>
+        <div class="declaration-line">The businesses are a byproduct of the man I am becoming.</div>
+        <div class="declaration-line">What I fail to manage I silently agree to lose.</div>
+        <div class="declaration-line">I do not quit loudly. I will not drift quietly.</div>
+        <div class="declaration-line highlight">December 27 is the target. Participation is my responsibility.</div>
+      </div>
+      <div class="declaration-verse">
+        "God fortify my mind, purify my mouth, let all that I do be blessed and glorify you.<br>
+        Lord Jesus shift my vision so that I may see through your eyes." — Psalm 71:21
+      </div>
+    </div>
+
+    <!-- Identity Frames -->
+    <div class="frames-section">
+      <div class="frames-header">
+        <span class="frames-label">⚡ Black Lab Holdings · Identity Frames</span>
+        <span class="frames-counter">Frame <span id="iframe-cur">1</span> of 8</span>
+      </div>
+      <div class="frame-card">
+        <div class="frame-card-header">
+          <div class="frame-bg-num" id="iframe-bgnum">01</div>
+          <div class="frame-badge" id="iframe-badge">Posture</div>
+          <div class="frame-card-title" id="iframe-title">The Holding Company Is the Lens</div>
+          <div class="frame-card-sub" id="iframe-sub">Everything you touch is an asset. Nothing is a hobby.</div>
+        </div>
+        <div class="frame-view-tabs">
+          <button class="frame-view-tab active" onclick="switchFrameView('frame')">Frame</button>
+          <button class="frame-view-tab" onclick="switchFrameView('scripture')">Scripture</button>
+          <button class="frame-view-tab" onclick="switchFrameView('neuro')">Neuro</button>
+          <button class="frame-view-tab" onclick="switchFrameView('sports')">Sports</button>
+        </div>
+        <div class="frame-view-content" id="iframe-content"></div>
+      </div>
+      <div class="frame-nav-strip">
+        <button class="fnav-btn" id="iframe-prev" onclick="navigateFrame(-1)">← Prev</button>
+        <div class="fnav-dots" id="iframe-dots"></div>
+        <button class="fnav-btn" id="iframe-next" onclick="navigateFrame(1)">Next →</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MANTRA OVERLAY -->
+<div class="mantra-overlay" id="mantra-overlay">
+  <button class="mantra-close" onclick="closeMantra()">✕</button>
+  <div class="mantra-label" id="mantra-label">Identity Trigger</div>
+  <div class="mantra-text" id="mantra-text"></div>
+  <div class="mantra-context" id="mantra-context"></div>
+  <div class="mantra-nav">
+    <button class="mantra-btn" onclick="prevMantra()">← Prev</button>
+    <button class="mantra-btn" onclick="nextMantra()">Next →</button>
+  </div>
+  <div class="mantra-dots" id="mantra-dots"></div>
+</div>
+
+<!-- DEPOSIT MODAL -->
+<div class="deposit-modal-overlay" id="deposit-modal-overlay" onclick="if(event.target===this)closeDeposit()">
+  <div class="deposit-modal">
+    <div class="deposit-modal-header">
+      <span>📖 New Deposit</span>
+      <button onclick="closeDeposit()" style="background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer">✕</button>
+    </div>
+    <textarea id="deposit-input" placeholder="Write what God gave you today — scripture, revelation, a word, a takeaway. Guard it."></textarea>
+    <button class="deposit-save-btn" onclick="saveDeposit()">Guard This Deposit</button>
+  </div>
+</div>
+
+<script>
+// ── STORAGE ──────────────────────────────────────────────────────────────────
+function loadSt() {
+  try { var r = localStorage.getItem('bf-v1'); return r ? JSON.parse(r) : null; } catch(e) { return null; }
+}
+function saveSt(s) {
+  try { localStorage.setItem('bf-v1', JSON.stringify(s)); } catch(e) {}
+}
+function getDateKey(offset) {
+  var d = new Date();
+  d.setDate(d.getDate() + (offset||0));
+  return d.toISOString().split('T')[0];
+}
+function getState(dateKey) {
+  try { return JSON.parse(localStorage.getItem('cls_' + dateKey) || '{}'); } catch(e) { return {}; }
+}
+function saveState(dateKey, state) { localStorage.setItem('cls_' + dateKey, JSON.stringify(state)); }
+function getNotes(dateKey) { return localStorage.getItem('clsnotes_' + dateKey) || ''; }
+function saveNotes(dateKey, v) { localStorage.setItem('clsnotes_' + dateKey, v); }
+function getJournal(dateKey) { return localStorage.getItem('clsjournal_' + dateKey) || ''; }
+function saveJournal(dateKey, v) { localStorage.setItem('clsjournal_' + dateKey, v); }
+
+// ── GOALS ────────────────────────────────────────────────────────────────────
+var TARGET_DATE = new Date('2026-12-27');
+function getDaysToTarget() {
+  var now = new Date();
+  var diff = TARGET_DATE - now;
+  return Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
+}
+function getGoals() {
+  try { return JSON.parse(localStorage.getItem('bf_goals') || '{}'); } catch(e) { return {}; }
+}
+function saveGoals(g) { localStorage.setItem('bf_goals', JSON.stringify(g)); }
+
+function incrementGoal(key, max) {
+  var goals = getGoals();
+  goals[key] = Math.min((goals[key] || 0) + 1, max);
+  saveGoals(goals);
+  renderGoals();
+}
+function decrementGoal(key) {
+  var goals = getGoals();
+  goals[key] = Math.max((goals[key] || 0) - 1, 0);
+  saveGoals(goals);
+  renderGoals();
+}
+function setGoalAmount(key, val) {
+  var goals = getGoals();
+  goals[key] = Math.max(0, Number(val) || 0);
+  saveGoals(goals);
+  renderGoals();
+}
+
+function renderGoals() {
+  var goals = getGoals();
+  var days = getDaysToTarget();
+  var el = document.getElementById('days-countdown');
+  if (el) el.textContent = days;
+
+  var goalDefs = [
+    {key:'shoots', label:'Prolific Shoots', target:60, tappable:true, prefix:'', suffix:''},
+    {key:'users', label:'Cornerstone Users', target:65, tappable:true, prefix:'', suffix:''},
+    {key:'blc', label:'BLC Capital', target:3000, tappable:false, prefix:'$', suffix:'', input:true},
+    {key:'chal10', label:'$10K Challenge', target:100, tappable:false, prefix:'Day ', suffix:''},
+    {key:'chal5', label:'$5K Challenge', target:100, tappable:false, prefix:'Day ', suffix:''},
+  ];
+
+  goalDefs.forEach(function(g) {
+    var val = goals[g.key] || 0;
+    var pct = Math.min((val / g.target) * 100, 100);
+    var fillEl = document.getElementById('goal-fill-' + g.key);
+    var valEl = document.getElementById('goal-val-' + g.key);
+    if (fillEl) fillEl.style.width = pct + '%';
+    if (valEl) valEl.textContent = g.prefix + val.toLocaleString() + ' / ' + g.prefix + g.target.toLocaleString();
+  });
+}
+
+// ── POWER 5 ──────────────────────────────────────────────────────────────────
+var P5_KEYS = ['god','body','prolific','cornerstone','blacklab'];
+function getP5Key() { return 'p5_' + getDateKey(0); }
+function loadP5() { try { return JSON.parse(localStorage.getItem(getP5Key()) || '{}'); } catch(e) { return {}; } }
+function saveP5(state) { localStorage.setItem(getP5Key(), JSON.stringify(state)); }
+
+function toggleP5(key) {
+  var state = loadP5();
+  state[key] = !state[key];
+  saveP5(state);
+  renderP5(state);
+  updateGovernor();
+}
+
+function renderP5(state) {
+  if (!state) state = loadP5();
+  P5_KEYS.forEach(function(k) {
+    var item = document.getElementById('p5-' + k);
+    var check = document.getElementById('p5-check-' + k);
+    if (!item) return;
+    if (state[k]) { item.classList.add('done'); if (check) check.textContent = '✓'; }
+    else { item.classList.remove('done'); if (check) check.textContent = ''; }
+  });
+  var done = P5_KEYS.filter(function(k){ return state[k]; }).length;
+  var gradeEl = document.getElementById('p5-grade');
+  if (!gradeEl) return;
+  var grade = '—', cls = '';
+  if (done === 5) { grade = 'A'; cls = 'grade-a'; }
+  else if (done === 4) { grade = 'B'; cls = 'grade-b'; }
+  else if (done === 3) { grade = 'C'; cls = 'grade-c'; }
+  else if (done > 0) { grade = 'F'; cls = 'grade-f'; }
+  gradeEl.textContent = grade;
+  gradeEl.className = 'power5-grade ' + cls;
+}
+
+// ── CHECKLIST ────────────────────────────────────────────────────────────────
+var currentOffset = 0;
+
+function renderDay(offset) {
+  var key = getDateKey(offset);
+  var state = getState(key);
+  var dateEl = document.getElementById('current-date');
+  if (dateEl) {
+    var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+    var d = new Date(); d.setDate(d.getDate() + offset);
+    dateEl.textContent = days[d.getDay()] + ' · ' + d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}).toUpperCase();
+  }
+  document.querySelectorAll('.task').forEach(function(t) {
+    var id = t.dataset.id;
+    if (state[id]) { t.classList.add('checked'); t.querySelector('.checkbox').textContent = '✓'; }
+    else { t.classList.remove('checked'); t.querySelector('.checkbox').textContent = ''; }
+  });
+  var journalEl = document.getElementById('daily-journal');
+  if (journalEl) {
+    journalEl.value = getJournal(key);
+    var countEl = document.getElementById('journal-count');
+    if (countEl) countEl.textContent = journalEl.value.length + ' chars';
+    journalEl.oninput = function() {
+      saveJournal(key, journalEl.value);
+      if (countEl) countEl.textContent = journalEl.value.length + ' chars';
+    };
+  }
+  var notesEl = document.getElementById('daily-notes');
+  if (notesEl) {
+    notesEl.value = getNotes(key);
+    notesEl.oninput = function() { saveNotes(key, notesEl.value); };
+  }
+  updateScore(state);
+  updateCounts(state);
+}
+
+function toggle(el) {
+  var key = getDateKey(currentOffset);
+  var state = getState(key);
+  var id = el.dataset.id;
+  state[id] = !state[id];
+  el.classList.toggle('checked', state[id]);
+  el.querySelector('.checkbox').textContent = state[id] ? '✓' : '';
+  saveState(key, state);
+  updateScore(state);
+  updateCounts(state);
+}
+
+function updateScore(state) {
+  var tasks = document.querySelectorAll('.task');
+  var total = tasks.length, done = 0;
+  tasks.forEach(function(t){ if(state[t.dataset.id]) done++; });
+  var pct = total ? Math.round(done/total*100) : 0;
+  var fill = document.getElementById('score-fill');
+  var pctEl = document.getElementById('score-pct');
+  if (fill) fill.style.width = pct + '%';
+  if (pctEl) pctEl.textContent = pct + '%';
+}
+
+function updateCounts(state) {
+  var pillars = [
+    {id:'faith',prefix:'faith-'},{id:'body',prefix:'body-'},{id:'bowman',prefix:'bow-'},
+    {id:'trading',prefix:'trd-'},{id:'prolific',prefix:'pro-'},{id:'learning',prefix:'lrn-'},{id:'content',prefix:'cnt-'}
+  ];
+  pillars.forEach(function(p) {
+    var items = document.querySelectorAll('[data-id^="' + p.prefix + '"]');
+    var done = 0; items.forEach(function(t){ if(state[t.dataset.id]) done++; });
+    var el = document.getElementById('count-' + p.id);
+    if (el) el.textContent = done + '/' + items.length;
+  });
+}
+
+function resetDay() {
+  if (!confirm('Reset all checkboxes for today?')) return;
+  localStorage.removeItem('cls_' + getDateKey(currentOffset));
+  renderDay(currentOffset);
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('active'); });
+  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('active'); });
+  var panel = document.getElementById('panel-' + tab);
+  if (panel) panel.classList.add('active');
+  document.querySelectorAll('.tab').forEach(function(t){
+    if (t.getAttribute('onclick') && t.getAttribute('onclick').indexOf("'" + tab + "'") > -1) t.classList.add('active');
+  });
+}
+
+// ── DEPOSITS ─────────────────────────────────────────────────────────────────
+function getDeposits() { try { return JSON.parse(localStorage.getItem('bearfruit_deposits') || '[]'); } catch(e) { return []; } }
+function saveDeposits(arr) { localStorage.setItem('bearfruit_deposits', JSON.stringify(arr)); }
+function openDeposit() {
+  var overlay = document.getElementById('deposit-modal-overlay');
+  var input = document.getElementById('deposit-input');
+  if (overlay) overlay.classList.add('open');
+  if (input) { input.value = ''; input.focus(); }
+}
+function closeDeposit() { var o = document.getElementById('deposit-modal-overlay'); if(o) o.classList.remove('open'); }
+function saveDeposit() {
+  var input = document.getElementById('deposit-input');
+  if (!input) return;
+  var text = input.value.trim();
+  if (!text) return;
+  var deposits = getDeposits();
+  deposits.unshift({ text:text, date:new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}), ts:Date.now() });
+  saveDeposits(deposits);
+  closeDeposit();
+  renderDeposits();
+}
+function renderDeposits() {
+  var list = document.getElementById('deposits-list');
+  if (!list) return;
+  var deposits = getDeposits();
+  if (deposits.length === 0) {
+    list.innerHTML = '<div class="deposit-empty">No deposits yet. Guard the good deposit — write what God gives you.</div>';
+    return;
+  }
+  var out = '';
+  deposits.forEach(function(d) {
+    out += '<div class="deposit-entry"><div class="deposit-date">' + d.date + '</div><div class="deposit-text">' + d.text.replace(/\n/g,'<br>') + '</div></div>';
+  });
+  list.innerHTML = out;
+}
+
+function toggleFailure(el) { el.classList.toggle('flagged'); }
+
+// ── MANTRAS ──────────────────────────────────────────────────────────────────
+var MANTRAS = [
+  {label:"Core 5",text:"I am aligned.",context:"Drop shoulders. Slow exhale. Use for: reset state."},
+  {label:"Core 5",text:"This is what growth feels like.",context:"Lean into the discomfort. Use when: feeling resistance."},
+  {label:"Core 5",text:"Not today. I do not move like that anymore.",context:"Jaw set. Stillness. Use when: the urge hits."},
+  {label:"Core 5",text:"Let patience have her perfect work.",context:"Use when: feeling rushed. Discipline is yours. Outcomes are not."},
+  {label:"Core 5",text:"I build. I do not browse.",context:"Use when: distraction, scrolling, cheap dopamine pulling at you."},
+  {label:"Identity",text:"Become the man. The businesses are a byproduct.",context:"You are not building a company. You are building a man. Everything else follows."},
+  {label:"Identity",text:"I move based on who I am becoming, not what I can do.",context:"Train your brain to respect what actually builds your life."},
+  {label:"Identity",text:"Your life looks like the choices you made.",context:"Not circumstance. Not luck. Choices."},
+  {label:"Identity",text:"I love myself enough to get better.",context:"Loving yourself is not just affirmations. It is what you are actively doing."},
+  {label:"Identity",text:"You are doper than the product you offer.",context:"Stop looking at what you can gain. See all that you have to offer."},
+  {label:"Identity",text:"Every room I am in, God is glorified.",context:"Developing myself to operate in the standard of excellence. That is the standard."},
+  {label:"Identity",text:"The real reward is the version of yourself you get to become.",context:"The money is a byproduct. The man is the mission."},
+  {label:"Identity",text:"I cheated on my fears, broke up with my doubts, got engaged with my faith, now I am marrying my dreams.",context:"This is your testimony. Walk in it."},
+  {label:"Identity",text:"He who is faithful.",context:"Not he who succeeds. Not he who desires more. He who is faithful."},
+  {label:"Identity",text:"I am a finisher.",context:"God is not just a starter. He is a finisher. If you are made in his image, you too are a finisher."},
+  {label:"Identity",text:"I am a steward, not an owner.",context:"Trade what God gave you to manage with discipline."},
+  {label:"Identity",text:"That is the foundation. Everything else is execution.",context:"You know what to do. Now do it."},
+  {label:"Identity",text:"I am hustling. I need to be a business. There is a difference.",context:"Eric Thomas. Stop operating like a freelancer. Walk in the holding company identity."},
+  {label:"Identity",text:"I am humble because of the source. I am confident because of the call.",context:"Proof of concept is confidence. When has God failed? Your mismanagement is not God failing."},
+  {label:"God",text:"Guard the good deposit that was entrusted to you.",context:"2 Timothy 1:6. What God placed in you is not yours to waste."},
+  {label:"God",text:"God is doing a new thing. Will you not perceive it?",context:"Isaiah 43. Do not base what God can do off your experience."},
+  {label:"God",text:"The pace of the Spirit is never in a hurry.",context:"Use when: feeling rushed or anxious. God has all the time in the world."},
+  {label:"God",text:"Stay in position. Do not drop it right when it was about to come.",context:"Habakkuk 2. Write the vision. Wait for it. Do not walk away."},
+  {label:"God",text:"Do not make your residence at a checkpoint.",context:"This season is necessary. But it is not the destination. Keep moving."},
+  {label:"God",text:"Prayer is alignment in real time.",context:"It is not performance. It is connection. Like WiFi. Stay connected."},
+  {label:"God",text:"God does not make tables and chairs. He makes trees.",context:"He gives you the material. You build. Stewardship is on you."},
+  {label:"God",text:"Take advantage of every opportunity while the sun is shining on your side of the earth.",context:"Hunt in the morning. Divide the spoils in the evening."},
+  {label:"God",text:"If God joins himself with you, there is no losing.",context:"I will not lose."},
+  {label:"God",text:"God comes to raise you up, not stay down with you.",context:"Use when: stuck in grief, stuck in the past, stuck in a season."},
+  {label:"God",text:"Do not let the clouds make you think the sun is not there.",context:"His track record has never failed. He is still there."},
+  {label:"God",text:"4/21 was a pruning, not a punishment.",context:"Jesus broke then blessed. The reset is the blessing side."},
+  {label:"God",text:"The enemy sees your potential before you do.",context:"The distraction was confirmation you are close. Stay the course."},
+  {label:"God",text:"Part time faith in a 24/7 God does not work.",context:"Pray with faith, not frustration. Speak with faith, not frustration."},
+  {label:"God",text:"I am one sound with God.",context:"In harmony. In agreement. In sync. Sounding together."},
+  {label:"God",text:"Include him in everything. Lord, you are a part of everything I am doing.",context:"In all thy ways acknowledge him. That consciousness keeps you with him."},
+  {label:"God",text:"If it had not been for the Lord who was on our side.",context:"Psalm 124. The whole testimony of this season is in that psalm."},
+  {label:"God",text:"Sensitivity, not emotionalism.",context:"Feel without being controlled by feeling. That is the operator standard."},
+  {label:"God",text:"He who began a good work in you will carry it on to completion.",context:"Philippians 1:6. God is not a distant starter. He is an active finisher."},
+  {label:"God",text:"Pray to receive instructions. Also pray to carry them out.",context:"Be in continual prayer. Condition your mind. Detox from hyper stimulation."},
+  {label:"God",text:"This is the day the Lord has made.",context:"It is not a bad day or a great day. Today is how God saw it to be."},
+  {label:"God",text:"You must always be in worship and prayer. Anything lacking, anything thriving — pray on it.",context:"Jesus said greater works than these shall you do. God expects the continuation of the mission."},
+  {label:"God",text:"Healthy leadership does not create dependency. It creates deployment.",context:"The mantle must move. And it is leaning in your direction."},
+  {label:"God",text:"Being afraid to be hurt, although natural, is the realization you do not trust God.",context:"Trust is not belief in good outcomes. It is belief in God regardless of outcomes."},
+  {label:"God",text:"God fortify my mind, purify my mouth, let all that I do be blessed and glorify you.",context:"Psalm 71:21. Lord Jesus shift my vision so that I may see through your eyes."},
+  {label:"God",text:"God wants to prosper you but cannot prosper you beyond the prosperity of your soul.",context:"3 John 1:2. Does my soul match up with what I am walking in? That is the test."},
+  {label:"God",text:"We do not depend on God for what he can do. We depend on God for who he is.",context:"Anytime you are seeking outside of the Lord, your soul is in trouble."},
+  {label:"God",text:"Find fulfillment in Jesus. Ancient faith has no emotionalism. It has love.",context:"You do not need more money. It will never be enough. When you receive Jesus he becomes more than enough."},
+  {label:"God",text:"Emotional validation leads to deception. When you lead with emotions you will not do what is necessary.",context:"The heart is desperately wicked. Do what is right, not what you feel."},
+  {label:"God",text:"God restore and build my soul.",context:"Psalm 23:1-3. Restoration is an experience. God is always measuring the status of your soul."},
+  {label:"Hard",text:"What I am doing is hard. But the results of not doing it will be much harder.",context:"Every choice leads to hard. Choose the hard that builds you."},
+  {label:"Hard",text:"Think about what your life looks like if you do not do it.",context:"Use this when you want to quit or skip. Picture the alternative clearly."},
+  {label:"Hard",text:"Everybody wants the view from the boat. You have to jump in.",context:"Pride keeps you on the boat. Child-like faith jumps in."},
+  {label:"Hard",text:"Momentum is everything. Learn how to stop bleeding.",context:"When you are on a run, do not call a timeout. Keep pressing."},
+  {label:"Hard",text:"You are going to fall in love with building once you do it fully.",context:"You are not there yet. But you will be. Keep going."},
+  {label:"Hard",text:"One more call. One more reach out. One more push.",context:"That is how momentum is built."},
+  {label:"Hard",text:"Be persistent without giving up.",context:"Persistence is where strength and power is found."},
+  {label:"Hard",text:"When things get hard you take it up a notch and never come back down.",context:"Consistent and persistent. That is the standard."},
+  {label:"Hard",text:"Stay up. Stay above. Stay focused.",context:"We can be grounded. We can be anchored in the middle of uncertainty."},
+  {label:"Hard",text:"There is no stopping.",context:"Condition your mind. Detox from hyper stimulation. Keep going."},
+  {label:"System",text:"Any part of your life you are not satisfied with, you were emotional. You did not do system.",context:"The system is the answer. Every time."},
+  {label:"System",text:"Rely on your method, not mercy.",context:"Method answers what gets done, when, and how."},
+  {label:"System",text:"Switch from spikes to patterns.",context:"Be like the sun. Consistent, not lightning. Farmers trust it because it never misses."},
+  {label:"System",text:"Exhaustion is effort with no structure.",context:"You are not tired from doing too much. You are tired from doing without a system."},
+  {label:"System",text:"Consistency is a design, not just a discipline.",context:"You have to build the design. Then the discipline follows."},
+  {label:"System",text:"Your systems are your discipline.",context:"You are not relying on willpower. You are relying on the design."},
+  {label:"System",text:"Figuring something out is putting a system around it.",context:"Stop winging it. Build the system. Execute the system."},
+  {label:"System",text:"Public attention, private disorganization.",context:"You do not want to look occupied while heaven regards you as ineffective."},
+  {label:"System",text:"All motion is not momentum.",context:"Busy is not productive. Motion is not progress. Measure output, not effort."},
+  {label:"System",text:"Increase without stewardship is just motion without preservation.",context:"Haggai 1. You are producing but still leaking."},
+  {label:"System",text:"It is not an income issue. It is an infrastructure issue.",context:"The question is not how do I make more. It is where is it going."},
+  {label:"System",text:"Fix leaks before chasing expansion.",context:"Until you identify the leak, increase will only accelerate the loss."},
+  {label:"System",text:"What you fail to manage you silently agree to lose.",context:"Every dollar you do not direct will eventually disappear."},
+  {label:"System",text:"Increase does not fix problems. It magnifies them.",context:"More makes you more of what you already are. Fix the structure first."},
+  {label:"System",text:"God is looking for a structure to bless.",context:"God is examining whether what you are building has the capacity to sustain what flows from him to you."},
+  {label:"System",text:"You are not broke. You are bleeding.",context:"It is not an income problem. Find the hole in the bag."},
+  {label:"System",text:"Close the loop. Everything must move.",context:"Outreach, follow-up, close. No open loops sitting. If it is not moving, it is leaking energy."},
+  {label:"System",text:"Touching work is not progressing work.",context:"Work ends when the task is done, not when time passes."},
+  {label:"System",text:"Better structure plus consistent execution. That is the game.",context:"Not more ideas. Not more effort. Better structure."},
+  {label:"Finish",text:"We do not quit loudly. We just drift quietly.",context:"The danger is not the loud quit. It is the slow drift. Stay anchored."},
+  {label:"Finish",text:"Every unfinished commitment becomes mental weight.",context:"The brain treats unfinished things as open loops. They drain energy and erode confidence."},
+  {label:"Finish",text:"You are not tired because you did too much. You are tired because you left too much open.",context:"The fix is not more motivation. It is more closure."},
+  {label:"Finish",text:"Completion is not an event for God. It is his nature. It must become your nature.",context:"From Genesis to Revelation God creates, sustains, completes. Even on the cross: it is finished."},
+  {label:"Finish",text:"You cannot have authority in a place you consistently abandon.",context:"Authority is never given on intention. It is given on stewardship."},
+  {label:"Finish",text:"Every unfinished assignment is a silent agreement with a version of you that never follows through.",context:"Every completed assignment is a declaration that you are becoming someone God can trust."},
+  {label:"Finish",text:"The assignment is not expansion. It is completion.",context:"Instead of starting new, find out what you can close. Audit the open ones."},
+  {label:"Finish",text:"Your responsibility is not perfection. It is participation.",context:"The same God that started the work in you is actively working with you to complete it."},
+  {label:"Finish",text:"Three things waiting in the next season: clarity, capacity, confidence.",context:"What will you finish so you can step into the next season?"},
+  {label:"Finish",text:"Finishing is rare. That is your edge.",context:"Starting is easy. Finishing is what separates."},
+  {label:"Trading",text:"The system is an 8/10. The operator is the only variable left.",context:"You are responsible for actions, not outcomes. Results do not validate you. Consistency does."},
+  {label:"Trading",text:"Trading is like golf. Consistency beats hero trades every time.",context:"Going even beats blowing up. A bogey every few holes is fine. A blowup ends the round."},
+  {label:"Trading",text:"You do not need to catch every move. Just the right moves cleanly.",context:"7 to 10 A trades per cycle is the whole game. You do not need 60."},
+  {label:"Trading",text:"Flat is a valid session. Zero is better than negative.",context:"Protect capital first. The missed move today hurt less than the blown account yesterday."},
+  {label:"Trading",text:"Sometimes God says wait and the trade still goes. Trust it anyway.",context:"There will be another setup. Honor the inner voice that says no."},
+  {label:"Trading",text:"Every revenge trade came within minutes of the previous loss. The cooldown is non-negotiable.",context:"If you are watching the clock, do not trade. Appointment pressure creates forced entries."},
+  {label:"Trading",text:"Tech and system frustration bleeds into trading. Recognize it before the session starts.",context:"You are a steward, not an owner. Trade what God gave you to manage with discipline."},
+  {label:"Trading",text:"The inner voice that said no was right. When it says no, honor it.",context:"4/21 was a pruning, not a punishment. The enemy sees your potential before you do."},
+  {label:"Soul",text:"God wants to prosper you but cannot prosper you beyond the prosperity of your soul.",context:"3 John 1:2. The soul is the foundation. Everything else is built on it."},
+  {label:"Soul",text:"God restore my soul.",context:"Psalm 23:3. He restores my soul. He leads me in paths of righteousness for his name sake."},
+  {label:"Soul",text:"Anytime you are seeking outside of the Lord, your soul is in trouble.",context:"To depend on God is not for what he can do. It is for who he is."},
+  {label:"Soul",text:"When your soul is broken you look for meaning outside of God. You have to find your meaning in God.",context:"Find fulfillment in Jesus. Not in metrics. Not in applause. In him."},
+  {label:"Soul",text:"Emotional validation leads to deception.",context:"When you lead with emotions you will not do what is necessary. You will do what you feel."},
+  {label:"Daily",text:"Good day or bad day, same work.",context:"Execution over emotion. Stay level."},
+  {label:"Daily",text:"I observe. I do not react.",context:"Sensitivity, not emotionalism. Feel without being controlled by feeling."},
+  {label:"Daily",text:"I return quickly.",context:"You will drift. The metric is how fast you come back."},
+  {label:"Daily",text:"Today is sovereign.",context:"Yesterday is done. Tomorrow has not started. This is the only moment you can act in."},
+  {label:"Daily",text:"Discipline today is freedom forever.",context:"Use when tired, lazy, not feeling it."},
+  {label:"Daily",text:"The harvest is plentiful but the workers are few.",context:"Matthew 9:37. Are you really willing to work?"},
+  {label:"Daily",text:"Just dignify the 4. The 40,000 is the byproduct.",context:"Do not diminish what is in your hand because it is not what you imagined."},
+  {label:"Daily",text:"Make your behavior match that vision daily.",context:"Not occasionally. Not when inspired. Daily."},
+  {label:"Daily",text:"Depth should always come before height.",context:"Build the foundation first. Height without depth falls."},
+  {label:"Daily",text:"Produce. Build. Protect. Stay aligned. Finish what you start.",context:"If you forget everything else, remember this. That is the daily code."},
+  {label:"Daily",text:"Preparing in calm time for war time. That is how you know you are ready.",context:"Psalm 1. Blessed is the man who meditates day and night."},
+  {label:"Daily",text:"Planning has its place. You have planned enough. Now practice and pressure.",context:"The only way to get a real measure of yourself is by pushing and stretching yourself."},
+  {label:"Daily",text:"You have the same amount of time to change as you do to complain.",context:"Use it."},
+  {label:"Daily",text:"Everything I write I reach.",context:"Habakkuk 2:2. Write the vision and make it plain. That he may run who reads it."},
+  {label:"Mind",text:"Am I reinforcing my current reality or creating a new one?",context:"You are always doing one or the other. Choose consciously."},
+  {label:"Mind",text:"Your brain filters reality based on what you are focused on. Choose the filter.",context:"11 million bits per second, only 50 get through. What are you priming for?"},
+  {label:"Mind",text:"Resilience is the capacity to absorb pressure without changing your identity.",context:"I can worship with this weight on me."},
+  {label:"Mind",text:"Pain is just information.",context:"Not a signal to stop. A signal to pay attention."},
+  {label:"Mind",text:"I am resilient.",context:"Say it. Mean it. It becomes biology."},
+  {label:"Mind",text:"The mission must always be bigger than your emotions.",context:"The mission does not stop because you feel something."},
+  {label:"Mind",text:"If it is not undeniably great it is too close.",context:"Frisella. If someone is even close, that is not enough. Be undeniably great."},
+  {label:"Mind",text:"Condition your mind and detox from hyper stimulation.",context:"Be still and know that I am God. Anchor in the middle of uncertainty."}
+];
+
+var mantraIndex = 0;
+function openMantra() {
+  mantraIndex = Math.floor(Math.random() * MANTRAS.length);
+  renderMantra();
+  var overlay = document.getElementById('mantra-overlay');
+  if (overlay) overlay.classList.add('open');
+}
+function closeMantra() { var o = document.getElementById('mantra-overlay'); if(o) o.classList.remove('open'); }
+function renderMantra() {
+  var m = MANTRAS[mantraIndex];
+  var lEl = document.getElementById('mantra-label');
+  var tEl = document.getElementById('mantra-text');
+  var cEl = document.getElementById('mantra-context');
+  var dots = document.getElementById('mantra-dots');
+  if (lEl) lEl.textContent = m.label;
+  if (tEl) tEl.textContent = m.text;
+  if (cEl) cEl.textContent = m.context;
+  if (dots) {
+    dots.innerHTML = '';
+    MANTRAS.forEach(function(_, i) {
+      var d = document.createElement ? document.createElement('div') : {className:'',onclick:null,appendChild:function(){}};
+      d.className = 'mantra-dot' + (i === mantraIndex ? ' active' : '');
+      dots.appendChild(d);
+    });
+  }
+}
+function nextMantra() { mantraIndex = (mantraIndex + 1) % MANTRAS.length; renderMantra(); }
+function prevMantra() { mantraIndex = (mantraIndex - 1 + MANTRAS.length) % MANTRAS.length; renderMantra(); }
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMantra(); });
+
+// ── GOVERNOR ──────────────────────────────────────────────────────────────────
+var DAY_PROFILES = {
+  0: {name:'SUNDAY', mode:'Reset + God', blocks:[
+    {start:0,end:390,cls:'god-block',dot:'#e05555',mode:'Rest',msg:'Rest. Sunday is sacred. Prepare before you perform.'},
+    {start:390,end:600,cls:'god-block',dot:'#e05555',mode:'God First',msg:'Sunday. Go deep with God. Worship. Word. Receive direction for the week.'},
+    {start:600,end:840,cls:'review-block',dot:'#41B6E6',mode:'Plan the Week',msg:'Plan the week. Set your intention. Prepare in calm time for war time.'},
+    {start:840,end:1020,cls:'review-block',dot:'#41B6E6',mode:'Full Room Reset',msg:'Clean environment. Clear space. Your outer world reflects your inner world.'},
+    {start:1020,end:1170,cls:'prolific-block',dot:'#0085CA',mode:'Light Review',msg:'Review the pipeline. Prepare for Monday. The harvest is plentiful.'},
+    {start:1170,end:1440,cls:'god-block',dot:'#e05555',mode:'Wind Down',msg:'Early wind down. Set intention for the week. Do not make your residence at a checkpoint.'}
+  ]},
+  1: {name:'MONDAY', mode:'Set the Tone', blocks:[
+    {start:0,end:390,cls:'free-block',dot:'#1A2535',mode:'Rest',msg:'Rest well. Monday sets the tone for everything that follows.'},
+    {start:390,end:450,cls:'god-block',dot:'#e05555',mode:'God First',msg:'Nothing opens without this. Prayer is alignment in real time.'},
+    {start:450,end:600,cls:'free-block',dot:'#1A2535',mode:'Morning Window',msg:'Monday. No trade required. Move with intention. Shoot if booked.'},
+    {start:600,end:1080,cls:'bowman-block',dot:'#4A6080',mode:'No Distractions',msg:'Bowman block. Head down. Docs, notes, execution. Rely on your method not your memory.'},
+    {start:1080,end:1170,cls:'prolific-block',dot:'#0085CA',mode:'Prolific Heavy',msg:'Monday evening. Prolific outreach is heavy tonight. This is the unlock key.'},
+    {start:1170,end:1260,cls:'review-block',dot:'#41B6E6',mode:'Meal Prep + Learn',msg:'Prep the week. Preparation decides your decisions.'},
+    {start:1260,end:1380,cls:'free-block',dot:'#1A2535',mode:'Wind Down',msg:'Wind down. Quick self-check: did I execute or freestyle today?'},
+    {start:1380,end:1440,cls:'god-block',dot:'#e05555',mode:'Shutdown 11 PM',msg:'Hard shutdown. No screens. No decisions. Guard the good deposit.'}
+  ]},
+  2: {name:'TUESDAY', mode:'Black Lab Focus', blocks:[
+    {start:0,end:390,cls:'free-block',dot:'#1A2535',mode:'Rest',msg:'Rest. Tuesday is a full operator day. You need to be sharp.'},
+    {start:390,end:450,cls:'god-block',dot:'#e05555',mode:'God First',msg:'Before the market, before everything. Alignment. Prayer is your WiFi.'},
+    {start:450,end:570,cls:'trading-block',dot:'#0085CA',mode:'Black Lab Window',msg:'Tuesday. Black Lab focus. Pre-market prep. One shot if the setup is there.'},
+    {start:570,end:630,cls:'trading-block',dot:'#0085CA',mode:'One Shot Window',msg:'Setup confirmed? One trade. Execute clean. Then done.'},
+    {start:630,end:1080,cls:'bowman-block',dot:'#4A6080',mode:'No Distractions',msg:'Bowman block. Exhaustion is effort with no structure. Execute the system.'},
+    {start:1080,end:1170,cls:'review-block',dot:'#41B6E6',mode:'Cornerstone',msg:'Cornerstone outreach. Clients and data. Move it forward every single day.'},
+    {start:1170,end:1260,cls:'review-block',dot:'#41B6E6',mode:'Learning',msg:'Study. Debrief the trade. What did the setup show you today?'},
+    {start:1260,end:1380,cls:'free-block',dot:'#1A2535',mode:'Wind Down',msg:'Wind down. Did I follow the system today?'},
+    {start:1380,end:1440,cls:'god-block',dot:'#e05555',mode:'Shutdown 11 PM',msg:'Hard shutdown. Guard the good deposit.'}
+  ]},
+  3: {name:'WEDNESDAY', mode:'Prolific Heavy', blocks:[
+    {start:0,end:390,cls:'free-block',dot:'#1A2535',mode:'Rest',msg:'Rest. Wednesday. Prolific outreach is the priority tonight.'},
+    {start:390,end:450,cls:'god-block',dot:'#e05555',mode:'God First',msg:'God first. Every single morning. This is non-negotiable.'},
+    {start:450,end:570,cls:'trading-block',dot:'#0085CA',mode:'Black Lab Window',msg:'Black Lab focus. Pre-market prep. Setup has to be there before you enter.'},
+    {start:570,end:630,cls:'trading-block',dot:'#0085CA',mode:'One Shot Window',msg:'One shot if aligned. Win or lose, stop. Move on.'},
+    {start:630,end:1080,cls:'bowman-block',dot:'#4A6080',mode:'No Distractions',msg:'Bowman execution. Switch from spikes to patterns. Be like the sun.'},
+    {start:1080,end:1170,cls:'prolific-block',dot:'#0085CA',mode:'Prolific Heavy',msg:'Wednesday evening. Prolific bookings focus. This is the income engine. Push.'},
+    {start:1170,end:1260,cls:'review-block',dot:'#41B6E6',mode:'Build + Learn',msg:'Light Black Lab or Cornerstone work. Keep the momentum.'},
+    {start:1260,end:1440,cls:'free-block',dot:'#1A2535',mode:'Wind Down',msg:'Wind down. Shutdown 11 PM. No screens after.'}
+  ]},
+  4: {name:'THURSDAY', mode:'Black Lab + Reset', blocks:[
+    {start:0,end:390,cls:'free-block',dot:'#1A2535',mode:'Rest',msg:'Rest well. Thursday. Black Lab focus and weekly reset night.'},
+    {start:390,end:450,cls:'god-block',dot:'#e05555',mode:'God First',msg:'God first. Stay in position. Do not drop it right when it was about to come.'},
+    {start:450,end:570,cls:'trading-block',dot:'#0085CA',mode:'Black Lab Window',msg:'Black Lab focus day. Pre-market. Read the setup. One shot if it is there.'},
+    {start:570,end:630,cls:'trading-block',dot:'#0085CA',mode:'One Shot Window',msg:'Follow the system exactly. No second chances. No revenge.'},
+    {start:630,end:1080,cls:'bowman-block',dot:'#4A6080',mode:'No Distractions',msg:'Bowman block. Method over memory. Execute.'},
+    {start:1080,end:1110,cls:'review-block',dot:'#41B6E6',mode:'Cornerstone',msg:'Cornerstone outreach. Move it forward.'},
+    {start:1110,end:1170,cls:'review-block',dot:'#41B6E6',mode:'Reset Block',msg:'Thursday reset. Laundry, life admin, catch up. The environment reflects the man.'},
+    {start:1170,end:1260,cls:'review-block',dot:'#41B6E6',mode:'Learning',msg:'Learn. Build. Skill stack. Depth before height.'},
+    {start:1260,end:1440,cls:'free-block',dot:'#1A2535',mode:'Wind Down',msg:'Wind down. Shutdown 11 PM. Tomorrow is the close.'}
+  ]},
+  5: {name:'FRIDAY', mode:'Expansion + Review', blocks:[
+    {start:0,end:390,cls:'free-block',dot:'#1A2535',mode:'Rest',msg:'Rest. Friday. Close the week strong. Review is mandatory tonight.'},
+    {start:390,end:450,cls:'god-block',dot:'#e05555',mode:'God First',msg:'God first. Friday. Things are closing. Walk with wisdom today.'},
+    {start:450,end:570,cls:'trading-block',dot:'#0085CA',mode:'Optional Trade',msg:'Friday. Optional trade only if mentally aligned. No forcing. No revenge.'},
+    {start:570,end:630,cls:'trading-block',dot:'#0085CA',mode:'Optional Window',msg:'Only enter if the setup is clear and your spirit is settled.'},
+    {start:630,end:1080,cls:'bowman-block',dot:'#4A6080',mode:'No Distractions',msg:'Bowman execution. Close the week clean.'},
+    {start:1080,end:1170,cls:'prolific-block',dot:'#0085CA',mode:'Prolific Follow-Up',msg:'Light Prolific follow-ups. The harvest is plentiful. Are you working?'},
+    {start:1170,end:1320,cls:'review-block',dot:'#41B6E6',mode:'Weekly Review',msg:'MANDATORY: Did I follow rules? Revenge trade? Outreach count? What broke? What gets fixed?'},
+    {start:1320,end:1440,cls:'free-block',dot:'#1A2535',mode:'Wind Down',msg:'Wind down. AI systems. Build. Shutdown 11 PM.'}
+  ]},
+  6: {name:'SATURDAY', mode:'Build + Capture', blocks:[
+    {start:0,end:390,cls:'god-block',dot:'#e05555',mode:'Rest',msg:'Rest. Saturday. Build day. No trading. Full focus on creation.'},
+    {start:390,end:480,cls:'god-block',dot:'#e05555',mode:'God First',msg:'Saturday God session. Go deeper. Receive. Let patience have her perfect work.'},
+    {start:480,end:840,cls:'prolific-block',dot:'#0085CA',mode:'Prolific Shoots',msg:'Priority: shoots if booked. Outreach. Content creation. This is the income engine.'},
+    {start:840,end:1020,cls:'review-block',dot:'#41B6E6',mode:'Cornerstone Build',msg:'Build session. Systems, creative, brand. You are going to fall in love with building.'},
+    {start:1020,end:1170,cls:'prolific-block',dot:'#0085CA',mode:'Evening Shoot',msg:'Evening shoot window. Capture. Every opportunity while the sun is on your side.'},
+    {start:1170,end:1260,cls:'review-block',dot:'#41B6E6',mode:'Car + Reset',msg:'Clean both cars. Light reset. The environment reflects the man.'},
+    {start:1260,end:1440,cls:'free-block',dot:'#1A2535',mode:'Wind Down',msg:'Wind down. Rest. Tomorrow is Sunday. Go into it prepared.'}
+  ]}
+};
+
+function getMinutes() { var n = new Date(); return n.getHours()*60 + n.getMinutes(); }
+
+function updateGovernor() {
+  var mins = getMinutes();
+  var now = new Date();
+  var day = now.getDay();
+  var timeStr = now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',hour12:true});
+  var profile = DAY_PROFILES[day];
+  var p5 = loadP5();
+  var doneCount = P5_KEYS.filter(function(k){ return p5[k]; }).length;
+  var block = profile.blocks[0];
+  for (var i = 0; i < profile.blocks.length; i++) {
+    if (mins >= profile.blocks[i].start && mins < profile.blocks[i].end) { block = profile.blocks[i]; break; }
+  }
+  var cls = block.cls, dotColor = block.dot;
+  var modeText = profile.name + ' · ' + block.mode;
+  var msgText = block.msg;
+  if (doneCount === 5) {
+    cls = 'free-block'; dotColor = '#00A878';
+    modeText = profile.name + ' · DAY UNLOCKED ✓';
+    msgText = 'All 5 complete. You built today. Be like the sun. Consistent, not lightning.';
+  } else if (doneCount >= 3) {
+    msgText = block.msg + ' (' + doneCount + '/5 Power 5 done)';
+  }
+  var gov = document.getElementById('governor');
+  var dot = document.getElementById('gov-dot');
+  var mode = document.getElementById('gov-mode');
+  var msg = document.getElementById('gov-message');
+  var time = document.getElementById('gov-time');
+  if (gov) gov.className = 'governor ' + cls;
+  if (dot) { dot.style.background = dotColor; dot.style.boxShadow = '0 0 10px ' + dotColor; }
+  if (mode) mode.textContent = modeText;
+  if (msg) msg.textContent = msgText;
+  if (time) time.textContent = timeStr;
+}
+updateGovernor();
+setInterval(updateGovernor, 15000);
+
+// ── DATE NAV ─────────────────────────────────────────────────────────────────
+var prevBtn = document.getElementById('prev-day');
+var nextBtn = document.getElementById('next-day');
+if (prevBtn) prevBtn.onclick = function() { currentOffset--; renderDay(currentOffset); };
+if (nextBtn) nextBtn.onclick = function() { if (currentOffset < 0) { currentOffset++; renderDay(currentOffset); } };
+
+function updateLiveDate() {
+  var now = new Date();
+  var el = document.getElementById('live-date');
+  if (el) el.textContent = now.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase() + ' · ' + now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+}
+setInterval(updateLiveDate, 1000);
+updateLiveDate();
+
+// ── INIT ─────────────────────────────────────────────────────────────────────
+renderDay(0);
+renderP5();
+renderDeposits();
+renderGoals();
+
+
+
+
+// ── IDENTITY FRAMES ──────────────────────────────────────────────────────────
+var IFRAME_DATA = [
+  {
+    num:"01", badge:"Posture",
+    title:"The Holding Company Is the Lens",
+    sub:"Everything you touch is an asset. Nothing is a hobby.",
+    frame:[
+      "You are not a photographer. You are not a trader. You are not a contractor tech founder. You are the founder and CEO of Black Lab Holdings. That identity walks into every room first.",
+      "Prolific is not you. BLC is not you. Even is not you. They are portfolio companies you own and steward. The holding company posture is not for later. It is now.",
+      "Bowman is intelligence gathering. BLC funds operations and builds the capital base. Prolific generates cashflow. Cornerstone OS builds the tech infrastructure. Every interaction is a capital event.",
+      "Before any call, ask: am I entering this as Lenny the operator, or Lenny the Black Lab Holdings CEO allocating time to this venture? That question rewires the entire interaction.",
+      "The vision: BLC at $100B AUM. Prolific as the media infrastructure layer. Even as the estimating OS for every trade. BEARFRUIT, Channel 4, Small World — God gave them. They are in the oven. Do not forget them."
+    ],
+    scripture:{ref:"Proverbs 4:7 — Wisdom is the principal thing",text:"Wisdom is the principal thing; therefore get wisdom. And in all your getting, get understanding.",commentary:"The holding company lens is wisdom applied. From heavenly places you see the whole board. Ground level is operator vision. Get the understanding before the assets follow."},
+    neuro:{text:"Operating inside a single venture collapses you into the limbic system — reactive, emotional, tunnel vision. The holding company identity is a deliberate activation of the prefrontal cortex. When you consciously identify as the CEO before entering a task, you fire different neural pathways. Your brain processes the same situation from a higher altitude.",key:"Identity priming before action rewires the default mode network. Who you believe you are determines which version of your brain shows up."},
+    sports:{text:"Bill Belichick did not call plays. He built systems that called plays for him. On game day he was watching the whole board, not the next snap. Phil Jackson coached Jordan and Kobe not as individual players but as expressions of a larger system. The individual was always in service of the architecture.",quote:"You are not a player. You are building the architecture."}
+  },
+  {
+    num:"02", badge:"Priority",
+    title:"Capital Allocation Is Your Real Job",
+    sub:"Time, money, attention — same ledger.",
+    frame:[
+      "You have three resources: time, money, attention. Capital allocation is the decision of how much of each goes where. This is the CEO primary function. Everything else is execution.",
+      "Right now: Bowman gets day hours because it funds operations. BLC gets morning windows because it builds the future. Prolific gets evenings and Saturdays because it is the cashflow engine. Even gets daily build actions because it is the scalable asset.",
+      "The wrong allocation kills. Two hours on a task that should take 20 minutes is a capital leak. Revenge trading is a capital leak. Busy work that does not close loops is Haggai 1 — wages into a bag with holes.",
+      "The right allocation compounds. BLC capital funds Prolific equipment. Prolific revenue funds Even development. Even revenue funds BLC scaling. The ecosystem self-funds when the allocation is right.",
+      "Daily question: Is what I am about to spend the next hour on the highest return use of this capital right now?"
+    ],
+    scripture:{ref:"Matthew 25:15 — To each according to his own ability",text:"And to one he gave five talents, to another two, and to another one, to each according to his own ability.",commentary:"The master job was not to do the work. It was to decide who got the talents. God gave you five. He expects allocation, multiplication, and increase. Burying any of them out of fear is the only wrong answer."},
+    neuro:{text:"Decision fatigue is real. Elite performers do not make more decisions — they make fewer, better ones from higher altitude. Warren Buffett says no to 99 of every 100 opportunities. That is not passivity. That is supreme capital allocation discipline. Every low-return task done instead of a high-return task is a limbic hijack.",key:"Pre-commit your allocation before the day starts. If you wait until the moment, the limbic system picks."},
+    sports:{text:"Michael Jordan did not play every minute. He allocated his energy — rested when defense was off the court, then locked in when the game was on the line. Tom Brady allocated his practice reps toward film study, not physical reps. Capital allocation is the elite athlete secret.",quote:"Champions are not the most talented. They are the most intentional with their energy."}
+  },
+  {
+    num:"03", badge:"Vision",
+    title:"You Are Building Infrastructure",
+    sub:"Products age. Infrastructure compounds.",
+    frame:[
+      "Amazon was not a bookstore. It was always logistics and cloud infrastructure. Bezos knew this from day one. The bookstore was the entry point, not the destination.",
+      "Black Lab is not a photography business or a trading account. It is the infrastructure layer for real estate, construction, capital, and technology — built from the inside out by someone who lived in all four.",
+      "Prolific is not a photo service. It is the media data layer inside every real estate transaction. Even is not an app. It is the pricing intelligence infrastructure for an entire industry. BLC is not a prop firm challenge. It is the capital engine.",
+      "The old self is the photographer driving to every house. The new self is the architect of infrastructure that runs whether you are in the car or not. You are building something that will outlive you.",
+      "Infrastructure question: If I stopped working tomorrow, what would still generate value? Build more of that."
+    ],
+    scripture:{ref:"Habakkuk 2:2-3 — Write the vision and make it plain",text:"Write the vision and make it plain on tablets, that he may run who reads it. For the vision is yet for an appointed time; but at the end it will speak, and it will not lie.",commentary:"God told Habakkuk to write the infrastructure first. The vision is not just a dream — it is a blueprint. A blueprint is infrastructure for a building that does not exist yet. Black Lab Holdings is written. The appointed time is coming. Everything I write I reach."},
+    neuro:{text:"When your identity is infrastructure-level, your brain stops problem-solving today fires and starts pattern-matching toward long-horizon outcomes. Bezos trained Amazon employees to think in six-year windows. You can train your individual brain the same way by constantly asking: what is this building toward, not what is this doing today.",key:"Infrastructure identity activates six-year thinking. Operator identity collapses to six-day thinking."},
+    sports:{text:"Nick Saban built a process so systematic it produced three different Heisman winners with completely different skill sets. The infrastructure was the product, not the individual. Gregg Popovich ran the same system for 20 years through seven different eras of players. The system was the dynasty.",quote:"Programs beat players. Infrastructure beats individuals. Systems beat talent."}
+  },
+  {
+    num:"04", badge:"Intelligence",
+    title:"C-Suite in the Dirt Is Intelligence Gathering",
+    sub:"The work is the data. The data is the strategy.",
+    frame:[
+      "You are in production right now. Bowman work, shooting properties, building software, trading futures. That is not below your pay grade. That is intelligence gathering.",
+      "Every property you shoot is market data. Every contractor you call for Even is user research. Every trade is system testing. Every day at Bowman is studying enterprise operations from the inside. You are not a laborer. You are a CEO gathering first-principles intelligence.",
+      "The companies that fail are where the founder stops learning from the front lines. Bezos worked in the warehouse on Black Friday. Howard Schultz still walks into Starbucks unannounced. The dirt is the intelligence.",
+      "Reframe: I am not driving to a shoot. I am gathering market intelligence on what real estate professionals need that they are not getting. I am not logging a trade. I am testing my system under live conditions.",
+      "C-suite question: What did I learn today that only someone in the field could know?"
+    ],
+    scripture:{ref:"Proverbs 27:23 — Know well the condition of your flocks",text:"Be diligent to know the state of your flocks, and attend to your herds.",commentary:"Solomon wisdom is not theoretical. Know the condition — present tense, ground level, in the field. The king who knows his fields allocates resources correctly. Your flocks are your businesses. Attend to them personally."},
+    neuro:{text:"Embodied cognition shows that your brain thinks better when your body is engaged in relevant physical experience. Abstract strategic thinking improves when paired with tactile, sensory engagement in the domain. Steve Jobs walked everywhere when he needed to think. The founder who is in the field is not wasting time — their prefrontal cortex is processing strategic problems through direct sensory data.",key:"Ground-level intelligence feeds executive-level strategy. The best decisions come from founders who still know what the product feels like."},
+    sports:{text:"LeBron James watches more film than almost any player in the league — not just his own games but opponents and historical footage. Kobe Bryant arrived at practice three hours early to study how the ball came off the rim at different angles. The greats do not separate intelligence from production.",quote:"The player who knows the game is unstoppable. The founder who knows the field is unfundable."}
+  },
+  {
+    num:"05", badge:"Principle",
+    title:"The Biblical Hustler Principle",
+    sub:"Excellence in the unseen produces overflow in the seen.",
+    frame:[
+      "The Biblical Hustler works with excellence in obscurity because the standard is God, not the audience. The tip is not the motivation. The tip is the overflow.",
+      "Standard tip is 15-20%. Excellence attracts overflow beyond standard. Luke 6:38 — give and it will be given: good measure, pressed down, shaken together, running over. The running over is not for the mediocre.",
+      "Every Bowman doc is signed with excellence even though no one is watching. Every trade is managed with discipline even when you are alone. Every property is shot as if it is the one that builds the relationship that funds the next ten.",
+      "The hustler principle is not about hours. It is about standard. You can work 16 hours at a low standard or 6 hours at a high standard. God rewards the standard, not the clock.",
+      "Be like the ant — Proverbs 6:6. No overseer. No commander. No ruler. Self-directed excellence. Design yourself to work at the highest standard without oversight."
+    ],
+    scripture:{ref:"Luke 6:38 — Give and it will be given to you",text:"Give, and it will be given to you: good measure, pressed down, shaken together, and running over will be put into your bosom.",commentary:"The measure you use is the standard you keep. If you show up with a 15% standard, you receive a 15% return. If you show up with the running-over standard — excellence that costs you something — the return is pressed down, shaken together, running over. Luke 6:38 is a productivity principle."},
+    neuro:{text:"Intrinsic motivation produces neurologically superior outcomes. When your standard is God and the work itself rather than external validation, the brain releases sustained dopamine differently — longer lasting, more stable, associated with deeper learning. Studies show intrinsically motivated workers produce 50% higher quality outcomes and persist through setbacks at dramatically higher rates.",key:"Intrinsic standard plus delayed reward is the highest performance neurological profile. That is the Biblical Hustler operating system."},
+    sports:{text:"Kobe Bryant shot 1,000 shots before practice began — not because someone told him to, but because that was his standard in obscurity. Nobody saw those 1,000 shots. But the 33,643 career points were built on them. Kevin Durant worked on specific moves alone in empty gyms at 4 AM for years before those moves appeared in games. Excellence in the unseen.",quote:"The work you do when no one is watching is the only work that counts."}
+  },
+  {
+    num:"06", badge:"Foundation",
+    title:"Identity Precedes Title",
+    sub:"You are already him. Let yourself believe it.",
+    frame:[
+      "You are the founder and CEO of Black Lab Holdings. Not when you hit $1M. Not when you close the first fund. Now. Identity is not earned by metrics. It is assumed by calling.",
+      "I am Israel. I am Moses. I am Joshua. I am Job. I am Saul from Tarsus. I am Peter the fisherman. I am Samson. I am David. I am Joseph. Every one of them walked in their calling before the title arrived.",
+      "The title does not create the identity. The identity earns the title. If you wait for metrics to validate who you are, you will always be behind. The identity walks in first and the evidence follows.",
+      "Language matters: I do not say I am trying to build a holding company. I say I lead Black Lab Holdings. I do not say I hope to be a fund manager. I say I manage capital. Language fires different neural pathways.",
+      "Identity without humility becomes pride. The holding company identity is stewardship. You hold it for God. Humble because of the source. Confident because of the call."
+    ],
+    scripture:{ref:"Romans 4:17 — God calls those things which do not exist as though they did",text:"God, who gives life to the dead and calls those things which do not exist as though they did.",commentary:"God called Abram Abraham — father of nations — before a single nation existed. God called Gideon a mighty man of valor while he was hiding in a winepress. You are allowed to call what does not yet fully exist into reality. That is not lying. That is faith."},
+    neuro:{text:"Identity-based behavior change is the most robust form of behavioral transformation. When you change behavior from the outside in — I need to do X — it is fragile under pressure. When you change from the inside out — I am the kind of person who does X — the behavior is stable under pressure because it is tied to self-concept. The reticular activating system filters reality for information that confirms your identity. When your identity is Black Lab Holdings founder, your RAS sees opportunities invisible to someone who identifies as an employee.",key:"Identity is not what you do. Identity is the filter through which you interpret everything you encounter."},
+    sports:{text:"Michael Jordan was cut from his high school varsity basketball team as a sophomore. The title did not match the identity he already held internally. He said he never stopped believing he was the best player on the floor — even when the coach did not see it yet. Muhammad Ali declared I am the greatest before he was. The declaration was not arrogance. It was identity preceding title.",quote:"Champions announce themselves. The announcement precedes the championship. That is not arrogance. That is faith with feet on it."}
+  },
+  {
+    num:"07", badge:"Service",
+    title:"Waiting Is the Serving Kind",
+    sub:"Show up without expecting the tip. Excellence attracts overflow.",
+    frame:[
+      "Waiting on God is not passive. It is the serving kind of waiting — you show up, you do the work, you serve at the highest standard, and you trust God with the outcome.",
+      "Standard tip is 15-20%. That is what the average server gets for average service. But excellence — showing up fully, anticipating needs before they are voiced — attracts overflow beyond standard.",
+      "Show up to every Bowman assignment with excellence because you are a steward and your standard does not change based on the audience. Show up to every property shoot as if it is the relationship that changes the trajectory.",
+      "The test of the serving kind of waiting is whether your standard drops when the reward is not obvious. If you send fewer outreach messages on a slow week, you failed the test. The standard is constant. The timing is God's.",
+      "Waiting question: Am I serving at the level that attracts overflow, or am I doing enough to get by and hoping for grace?"
+    ],
+    scripture:{ref:"Luke 6:38 — Good measure, pressed down, shaken together",text:"Give, and it will be given to you: good measure, pressed down, shaken together, and running over.",commentary:"Running over is not the standard return. It is the overflow return. It goes to those who gave at the pressed-down, shaken-together level. The measure you use is the measure returned. You are not waiting for God to bless minimum effort. You are serving at maximum standard and trusting the overflow to follow."},
+    neuro:{text:"Delayed gratification is the highest predictor of long-term success across every domain. The children who waited in the marshmallow experiment did not suppress desire — they redirected attention. The serving kind of waiting is neurologically the same mechanism. You redirect attention from the reward to the service itself. This produces neurological stability and superior long-term outcomes.",key:"Delayed gratification is not white-knuckling through desire. It is redirecting attention to the service itself."},
+    sports:{text:"Tim Duncan was called the most boring great player in NBA history. He showed up every night, did his job, served the system, trusted the outcomes. 15 All-Star selections. 5 championships. 2 MVPs. He was not flashy. He served at the highest standard on both ends of the floor every single night regardless of who was watching. The overflow — his legacy — is regarded as the greatest power forward in history.",quote:"Show up when it does not matter. Build the habit. Let God handle when it starts to matter."}
+  },
+  {
+    num:"08", badge:"Covenant",
+    title:"Humble Confidence Covenant",
+    sub:"Humble because of the source. Confident because of the call.",
+    frame:[
+      "Humble confidence is not a contradiction. It is the most powerful operating state a founder can carry. Humble: I know this is not because of me. Confident: I know God called me to do this and he does not fail.",
+      "Proof of concept is confidence. You have already done things that should not have been possible given your resources. When has God failed? Your mismanagement and missteps are not God failing. God loves you so much he will make a lesson out of it — that is his glory and his grace.",
+      "Production over performance. You do not need validation or approval. The only true metric is what did you produce and on what level. A bad job done in faith is better than a perfect plan sitting still. Is the instrument for you and your feelings, or is it for God?",
+      "Danger when it is affectionate. The enemy does not come aggressively when you are strong. He comes through proximity — environments, entertainment, relationships, habits that weaken you while making you feel alive. Frustration is a diagnostic.",
+      "The covenant: I will not perform for applause. I will not shrink from calling. I will trust he who began a good work in me to complete it. Being afraid to be hurt is the realization you do not trust God."
+    ],
+    scripture:{ref:"Romans 4:20-21 — He did not waver in unbelief",text:"He did not waver at the promise of God through unbelief, but was strengthened in faith, giving glory to God, and being fully convinced that what He had promised He was also able to perform.",commentary:"Abraham did not look at his body and waver. He looked at the promise. Humble confidence is this: I see my limitations clearly and I am not moved by them, because what God promised is more certain than what I observe."},
+    neuro:{text:"Calibrated confidence — accurate belief in your capabilities combined with accurate humility about your limitations — is the most durable form of self-efficacy. This profile produces superior decision-making under pressure, faster recovery from setbacks, and significantly higher persistence through obstacles. The humble confidence covenant is not just spiritually wise. It is neurologically optimal.",key:"Calibrated confidence — knowing the source of your strength and the limits of your self — is the neurological profile of elite performers under sustained pressure."},
+    sports:{text:"Babe Ruth, Michael Jordan, Roger Federer missed or lost as much or more than the statistics that highlight their greatness. Ruth struck out 1,330 times. Jordan missed more shots than he made. Federer lost 262 professional matches. The separation is not in being perfect. It is in being faithful — willing to do what others will not to get to where you know you are supposed to be.",quote:"The greats are not defined by their percentages. They are defined by their persistence. That is faith with a stat line."}
+  }
+];
+
+var iFrameCur = 0;
+var iFrameView = 'frame';
+
+function renderIdentityFrame() {
+  var f = IFRAME_DATA[iFrameCur];
+  var curEl = document.getElementById('iframe-cur');
+  var bgEl = document.getElementById('iframe-bgnum');
+  var badgeEl = document.getElementById('iframe-badge');
+  var titleEl = document.getElementById('iframe-title');
+  var subEl = document.getElementById('iframe-sub');
+  var prevEl = document.getElementById('iframe-prev');
+  var nextEl = document.getElementById('iframe-next');
+  if (curEl) curEl.textContent = iFrameCur + 1;
+  if (bgEl) bgEl.textContent = f.num;
+  if (badgeEl) badgeEl.textContent = f.badge;
+  if (titleEl) titleEl.textContent = f.title;
+  if (subEl) subEl.textContent = f.sub;
+  if (prevEl) prevEl.disabled = iFrameCur === 0;
+  if (nextEl) nextEl.disabled = iFrameCur === IFRAME_DATA.length - 1;
+  renderFrameDots();
+  renderFrameView();
+}
+
+function renderFrameView() {
+  var f = IFRAME_DATA[iFrameCur];
+  var content = document.getElementById('iframe-content');
+  if (!content) return;
+  document.querySelectorAll('.frame-view-tab').forEach(function(t) {
+    t.classList.remove('active');
+    if (t.getAttribute('onclick') && t.getAttribute('onclick').indexOf("'" + iFrameView + "'") > -1) t.classList.add('active');
+  });
+  var html = '';
+  if (iFrameView === 'frame') {
+    html = '<div class="fv-points">';
+    f.frame.forEach(function(pt, i) {
+      html += '<div class="fv-point"><span class="fv-num">0' + (i+1) + '</span><span class="fv-text">' + pt + '</span></div>';
+    });
+    html += '</div>';
+  } else if (iFrameView === 'scripture') {
+    html = '<div class="fv-block scripture">';
+    html += '<div class="fv-block-label">Scripture</div>';
+    html += '<div class="fv-block-ref">' + f.scripture.ref + '</div>';
+    html += '<div class="fv-block-main">' + f.scripture.text + '</div>';
+    html += '<div class="fv-block-sub">' + f.scripture.commentary + '</div>';
+    html += '</div>';
+  } else if (iFrameView === 'neuro') {
+    html = '<div class="fv-block neuro">';
+    html += '<div class="fv-block-label">Neuroscience</div>';
+    html += '<div class="fv-block-sub">' + f.neuro.text + '</div>';
+    if (f.neuro.key) html += '<div class="fv-key">' + f.neuro.key + '</div>';
+    html += '</div>';
+  } else if (iFrameView === 'sports') {
+    html = '<div class="fv-block sports">';
+    html += '<div class="fv-block-label">Elite Athlete Parallel</div>';
+    html += '<div class="fv-block-sub">' + f.sports.text + '</div>';
+    if (f.sports.quote) html += '<div class="fv-quote">' + f.sports.quote + '</div>';
+    html += '</div>';
+  }
+  content.innerHTML = html;
+}
+
+function renderFrameDots() {
+  var dots = document.getElementById('iframe-dots');
+  if (!dots) return;
+  dots.innerHTML = '';
+  IFRAME_DATA.forEach(function(_, i) {
+    var d = document.createElement ? document.createElement('button') : {className:'',onclick:null,appendChild:function(){}};
+    d.className = 'fnav-dot' + (i === iFrameCur ? ' active' : '');
+    d.onclick = (function(idx){ return function(){ iFrameCur = idx; iFrameView = 'frame'; renderIdentityFrame(); }; })(i);
+    dots.appendChild(d);
+  });
+}
+
+function switchFrameView(view) {
+  iFrameView = view;
+  renderFrameView();
+  document.querySelectorAll('.frame-view-tab').forEach(function(t) {
+    t.classList.remove('active');
+    if (t.getAttribute('onclick') && t.getAttribute('onclick').indexOf("'" + view + "'") > -1) t.classList.add('active');
+  });
+}
+
+function navigateFrame(dir) {
+  var next = iFrameCur + dir;
+  if (next >= 0 && next < IFRAME_DATA.length) {
+    iFrameCur = next;
+    iFrameView = 'frame';
+    renderIdentityFrame();
+  }
+}
+
+// Swipe for frames
+var fTouchX = 0;
+document.addEventListener('touchstart', function(e) { fTouchX = e.touches[0].clientX; });
+document.addEventListener('touchend', function(e) {
+  var diff = fTouchX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50 && document.getElementById('panel-identity') && document.getElementById('panel-identity').classList.contains('active')) {
+    navigateFrame(diff > 0 ? 1 : -1);
+  }
+});
+
+
+renderIdentityFrame();
+
+// ── PWA SERVICE WORKER + NOTIFICATIONS ─────────────────────────────────
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(reg) {
+      console.log('SW registered');
+      scheduleNotifications(reg);
+    }).catch(function(err) {
+      console.log('SW failed:', err);
+    });
+  });
+}
+
+function scheduleNotifications(reg) {
+  if (!('Notification' in window)) return;
+  if (Notification.permission === 'default') {
+    // Ask for permission after a short delay
+    setTimeout(function() {
+      Notification.requestPermission();
+    }, 3000);
+  }
+}
+
+// Local notification scheduler - fires when app is open
+var NOTIF_SCHEDULE = [
+  {hour:6,  min:30, title:'God First', body:'Nothing opens without this. Prayer is alignment in real time.'},
+  {hour:9,  min:25, title:'Trading Window in 5', body:'Gates checked? Setup confirmed? One shot.'},
+  {hour:12, min:0,  title:'Power 5 Check', body:'Where are you on the 5? Do not let the day slip.'},
+  {hour:17, min:55, title:'Bowman Closing', body:'Evening block starts now. Prolific outreach is the unlock key.'},
+  {hour:20, min:0,  title:'Outreach Check', body:'Did you send one today? They need you. They are not looking for you specifically. Show up.'},
+  {hour:21, min:0,  title:'Wind Down', body:'Shutdown at 11. Start winding down. Guard the good deposit.'},
+  {hour:22, min:45, title:'11 PM Shutdown', body:'Hard shutdown. No screens. No decisions. Rest is the work.'},
+];
+
+var firedToday = {};
+
+function checkSchedule() {
+  var now = new Date();
+  var today = now.toDateString();
+  var h = now.getHours();
+  var m = now.getMinutes();
+
+  NOTIF_SCHEDULE.forEach(function(n) {
+    var key = today + '-' + n.hour + '-' + n.min;
+    if (h === n.hour && m === n.min && !firedToday[key]) {
+      firedToday[key] = true;
+      if (Notification.permission === 'granted') {
+        try {
+          new Notification(n.title, {
+            body: n.body,
+            icon: '/icon-192.png',
+            tag: key,
+            silent: false
+          });
+        } catch(e) {}
+      }
+    }
+  });
+}
+
+// Check every 30 seconds
+setInterval(checkSchedule, 30000);
+checkSchedule();
+
+// ── AUTO MANTRA SPLASH ON OPEN ──────────────────────────────────────────
+(function() {
+  var lastOpen = localStorage.getItem('bf_last_open');
+  var now = Date.now();
+  var fiveMin = 5 * 60 * 1000;
+
+  // Show splash if first open or been away 5+ minutes
+  if (!lastOpen || (now - parseInt(lastOpen)) > fiveMin) {
+    localStorage.setItem('bf_last_open', now);
+    setTimeout(function() {
+      openMantra();
+    }, 800);
+  } else {
+    localStorage.setItem('bf_last_open', now);
+  }
+})();
+
+</script>
+</body>
+</html>
