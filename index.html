@@ -908,21 +908,6 @@
     margin-top: 8px;
   }
 
-  /* STREAK */
-  .streak-row {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-top: 4px;
-  }
-  .streak-dot {
-    width: 10px; height: 10px;
-    border: 1px solid var(--line);
-    background: var(--mid);
-    transition: all 0.2s;
-  }
-  .streak-dot.done { background: var(--gold); border-color: var(--gold-light); }
-
   @media (max-width: 400px) {
     .tabs { gap: 0; }
     .tab { padding: 12px 10px; font-size: 8px; }
@@ -1525,20 +1510,6 @@
     <h4>🤝 Relationships</h4>
     <div class="system-item">Parents — Weekly touchpoint</div>
     <div class="system-item">Networking — 1/month (5K run already started — good)</div>
-  </div>
-
-  <!-- Outreach counter -->
-  <div class="system-card">
-    <h4>📊 Outreach Counter</h4>
-    <div style="display:flex;align-items:center;gap:16px;margin-bottom:12px">
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--gold);line-height:1" id="outreach-count">0</div>
-      <div style="font-size:10px;color:var(--muted);line-height:1.8">contacts<br>reached<br>/ 500</div>
-    </div>
-    <div class="streak-row" id="outreach-dots"></div>
-    <div style="display:flex;gap:8px;margin-top:12px">
-      <button onclick="addOutreach()" style="flex:1;padding:10px;background:rgba(0,133,202,0.1);border:1px solid var(--gold);color:var(--gold);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer">+ Add Contact</button>
-      <button onclick="removeOutreach()" style="padding:10px 14px;background:none;border:1px solid var(--line);color:var(--muted);font-family:'DM Mono',monospace;font-size:12px;cursor:pointer">−</button>
-    </div>
   </div>
 
 </div>
