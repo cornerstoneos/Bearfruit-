@@ -515,63 +515,6 @@
   }
   .deposit-save-btn:hover { background: rgba(0,133,202,0.25); }
 
-  /* ── FAILURE CHECK ── */
-  .failure-check {
-    margin-bottom: 24px;
-    border: 1px solid rgba(192,57,43,0.2);
-    background: rgba(192,57,43,0.04);
-    padding: 16px;
-  }
-  .failure-check-header {
-    font-size: 9px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--red);
-    font-family: 'DM Mono', monospace;
-    margin-bottom: 4px;
-  }
-  .failure-check-sub {
-    font-size: 10px;
-    color: var(--muted);
-    margin-bottom: 14px;
-    font-style: italic;
-  }
-  .failure-items { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
-  .failure-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    padding: 6px 0;
-  }
-  .failure-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    border: 1px solid var(--muted);
-    flex-shrink: 0;
-    transition: all 0.2s;
-  }
-  .failure-item.flagged .failure-dot {
-    background: var(--red);
-    border-color: var(--red);
-    box-shadow: 0 0 6px rgba(192,57,43,0.4);
-  }
-  .failure-item span {
-    font-size: 12px;
-    color: var(--muted);
-    transition: color 0.2s;
-  }
-  .failure-item.flagged span { color: var(--cream); }
-  .failure-truth {
-    font-family: 'Playfair Display', serif;
-    font-size: 11px;
-    color: var(--muted);
-    font-style: italic;
-    line-height: 1.7;
-    border-top: 1px solid rgba(192,57,43,0.15);
-    padding-top: 12px;
-  }
-
   /* ── BEAR FRUIT HEADER LOGO ── */
   .bear-logo {
     width: 42px; height: 42px;
@@ -1045,7 +988,6 @@
   .journal-header-label{font-size:11px!important;letter-spacing:0.35em!important;font-weight:700!important;}
   .journal-textarea{font-size:15px!important;}
   .deposit-text{font-size:13px!important;line-height:1.8!important;}
-  .failure-item span{font-size:14px!important;font-weight:500!important;}
   .goals-days{text-shadow:0 0 24px rgba(0,133,202,0.6)!important;}
 
 
@@ -1546,31 +1488,6 @@
     <div class="deposits-list" id="deposits-list"></div>
   </div>
 
-  <!-- DAILY FAILURE CHECK -->
-  <div class="failure-check">
-    <div class="failure-check-header">⚠ Daily Failure Check</div>
-    <div class="failure-check-sub">If the day goes off — reset immediately. Same day, not tomorrow.</div>
-    <div class="failure-items">
-      <div class="failure-item" onclick="toggleFailure(this)">
-        <div class="failure-dot"></div>
-        <span>Did I skip God?</span>
-      </div>
-      <div class="failure-item" onclick="toggleFailure(this)">
-        <div class="failure-dot"></div>
-        <span>Did I break trading rules?</span>
-      </div>
-      <div class="failure-item" onclick="toggleFailure(this)">
-        <div class="failure-dot"></div>
-        <span>Did I avoid outreach?</span>
-      </div>
-      <div class="failure-item" onclick="toggleFailure(this)">
-        <div class="failure-dot"></div>
-        <span>Did I waste time scrolling?</span>
-      </div>
-    </div>
-    <div class="failure-truth">This isn't a schedule. This is your standard of operation.<br>You don't complete it perfectly — you return to it quickly when you slip.</div>
-  </div>
-
   <!-- NOTES -->
   <div class="note-area">
     <textarea id="daily-notes" placeholder="Log today's wins, observations, adjustments..."></textarea>
@@ -1943,8 +1860,6 @@ function renderDeposits() {
   });
   list.innerHTML = out;
 }
-
-function toggleFailure(el) { el.classList.toggle('flagged'); }
 
 // ── MANTRAS ──────────────────────────────────────────────────────────────────
 var MANTRAS = [
