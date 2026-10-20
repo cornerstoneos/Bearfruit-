@@ -652,6 +652,128 @@
   /* PANELS */
   .panel { display: none; padding: 24px; }
   .panel.active { display: block; }
+  .daily-head { margin: -24px -24px 24px; }
+
+  /* ── NOW ── */
+  .now-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .focus-card {
+    margin-bottom: 24px;
+    border: 1px solid rgba(0,133,202,0.35);
+    background: var(--charcoal);
+    padding: 20px 16px;
+  }
+  .focus-live { display: none; text-align: center; }
+  .focus-card.running .focus-idle { display: none; }
+  .focus-card.running .focus-live { display: block; }
+  .focus-card.running { border-color: var(--gold); box-shadow: 0 0 24px rgba(0,133,202,0.15); }
+  .focus-pick { display: flex; gap: 8px; margin-bottom: 10px; }
+  .focus-opt {
+    flex: 1;
+    padding: 12px 8px;
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .focus-opt.active { border-color: var(--gold); color: var(--cream); background: rgba(0,133,202,0.12); }
+  .focus-start, .focus-plus {
+    width: 100%;
+    padding: 16px;
+    margin-top: 6px;
+    background: var(--gold);
+    border: none;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+  }
+  .focus-plus { padding: 22px; font-size: 32px; }
+  .focus-plus:active, .focus-start:active { transform: scale(0.98); }
+  .focus-hint, .focus-last {
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+  }
+  .focus-last { color: var(--green); font-style: normal; }
+  .focus-last:empty { display: none; }
+  .focus-clock {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    line-height: 1;
+    color: var(--cream);
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+  .focus-sent { margin-top: 12px; font-size: 12px; color: var(--muted); }
+  .focus-sent span { color: var(--cream); font-weight: 500; }
+  .focus-end {
+    margin-top: 14px;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .scorecard { margin-bottom: 24px; }
+  .sc-row {
+    border: 1px solid var(--line);
+    background: var(--charcoal);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+  }
+  .sc-row.floor-met { border-color: rgba(0,168,120,0.5); }
+  .sc-top { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+  .sc-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    color: var(--cream);
+    text-decoration: none;
+  }
+  .sc-sub { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); flex: 1; }
+  .sc-count { font-family: 'Bebas Neue', sans-serif; font-size: 34px; color: var(--gold); line-height: 1; }
+  .sc-row.floor-met .sc-count { color: var(--green); }
+  .sc-bar { height: 6px; background: var(--mid); position: relative; margin-bottom: 10px; }
+  .sc-fill { height: 100%; width: 0%; background: var(--gold); transition: width 0.4s; }
+  .sc-row.floor-met .sc-fill { background: var(--green); }
+  .sc-floor { position: absolute; top: -3px; bottom: -3px; left: 20%; width: 2px; background: var(--cream); opacity: 0.5; }
+  .sc-dots { display: flex; gap: 6px; margin-bottom: 10px; }
+  .sc-dot { flex: 1; height: 6px; background: var(--mid); }
+  .sc-dot.on { background: var(--green); }
+  .sc-bottom { display: flex; align-items: center; gap: 10px; }
+  .sc-status { flex: 1; font-size: 11px; color: var(--muted); }
+  .sc-row.floor-met .sc-status { color: var(--green); }
+  .sc-btns { display: flex; gap: 6px; }
+  .sc-btns button {
+    padding: 10px 14px;
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .sc-btns .sc-plus { border-color: var(--gold); color: var(--gold); background: rgba(0,133,202,0.1); min-width: 64px; }
+  #sc-blc-reset { display: none; }
+  #sc-blc.eligible #sc-blc-reset { display: inline-block; border-color: var(--green); color: var(--green); }
 
   /* PILLAR */
   .pillar {
@@ -1168,12 +1290,6 @@
   <div class="date-strip" id="live-date"></div>
 </div>
 
-<div class="date-nav">
-  <button id="prev-day" title="Previous day">‹</button>
-  <div id="current-date"></div>
-  <button id="next-day" title="Next day">›</button>
-</div>
-
 <!-- OS LAUNCHER -->
 <div class="os-launcher">
   <a class="os-btn" href="https://prolificgroup.netlify.app/" target="_blank" title="Prolific">
@@ -1199,68 +1315,77 @@
   <span class="gov-time" id="gov-time"></span>
 </div>
 
-<div class="identity-banner">
-  <h3>⚙ Core Identity — Read Daily</h3>
-  <div class="identity-items">
-    <div class="identity-item">I execute whether I feel like it or not</div>
-    <div class="identity-item">I operate like a fund manager</div>
-    <div class="identity-item">I build systems, not moods</div>
-    <div class="identity-item">I move first, confidence follows</div>
-    <div class="identity-item">I stay aligned with God throughout the day</div>
-  </div>
-</div>
-
-<div class="score-bar">
-  <span class="score-label">Daily Score</span>
-  <div class="score-track"><div class="score-fill" id="score-fill"></div></div>
-  <span class="score-pct" id="score-pct">0%</span>
-</div>
-
 <div class="tabs">
-  <button class="tab active" onclick="switchTab('daily')">Daily</button>
+  <button class="tab active" onclick="switchTab('now')">Now</button>
+  <button class="tab" onclick="switchTab('daily')">Daily</button>
   <button class="tab" onclick="switchTab('identity')">Identity</button>
 </div>
 
-<!-- DAILY PANEL -->
-<div class="panel active" id="panel-daily">
+<!-- NOW PANEL -->
+<div class="panel active" id="panel-now">
 
-  <!-- DEC 27 GOALS -->
-  <div class="goals-section">
-    <div class="goals-header">
-      <div class="goals-countdown-wrap">
-        <span class="goals-days" id="days-countdown">146</span>
-        <span class="goals-days-label">DAYS TO<br>DEC 27</span>
+  <!-- FOCUS SESSION -->
+  <div class="focus-card" id="focus-card">
+    <div class="focus-idle">
+      <div class="now-eyebrow">▶ Start a session</div>
+      <div class="focus-pick" id="focus-pick-vertical">
+        <button class="focus-opt active" data-v="prolific" onclick="pickFocus('vertical','prolific')">Prolific</button>
+        <button class="focus-opt" data-v="even" onclick="pickFocus('vertical','even')">Even</button>
       </div>
-      <div class="goals-title-wrap">
-        <div class="goals-eyebrow">ACTIVE GOALS</div>
-        <div class="goals-verse">Everything I write I reach — Hab 2:2</div>
+      <div class="focus-pick" id="focus-pick-mins">
+        <button class="focus-opt active" data-v="10" onclick="pickFocus('mins',10)">10 min</button>
+        <button class="focus-opt" data-v="24" onclick="pickFocus('mins',24)">24 min</button>
+      </div>
+      <button class="focus-start" onclick="startFocus()">Start Outreach</button>
+      <div class="focus-last" id="focus-last"></div>
+      <div class="focus-hint">It doesn't need to be perfect. Send it.</div>
+    </div>
+    <div class="focus-live">
+      <div class="now-eyebrow" id="focus-live-label">Prolific outreach</div>
+      <div class="focus-clock" id="focus-clock">10:00</div>
+      <button class="focus-plus" onclick="focusPlus()">+1 Sent</button>
+      <div class="focus-sent"><span id="focus-sent">0</span> sent this session</div>
+      <button class="focus-end" onclick="endFocus(false)">End session</button>
+    </div>
+  </div>
+
+  <!-- SCORECARD -->
+  <div class="scorecard">
+    <div class="now-eyebrow">Today's Scorecard <span id="sessions-today"></span></div>
+    <div class="sc-row" id="sc-prolific">
+      <div class="sc-top">
+        <a class="sc-name" href="https://prolificgroup.netlify.app/" target="_blank">Prolific ↗</a>
+        <span class="sc-sub">Acquisition</span>
+        <span class="sc-count" id="sc-prolific-count">0</span>
+      </div>
+      <div class="sc-bar"><div class="sc-fill" id="sc-prolific-fill"></div><div class="sc-floor"></div></div>
+      <div class="sc-bottom">
+        <span class="sc-status" id="sc-prolific-status"></span>
+        <div class="sc-btns"><button onclick="bumpOutreach('prolific',-1)">−</button><button class="sc-plus" onclick="bumpOutreach('prolific',1)">+1</button></div>
       </div>
     </div>
-    <div class="goals-list">
-      <div class="goal-row">
-        <div class="goal-info"><span class="goal-label">Prolific Shoots</span><span class="goal-val" id="goal-val-shoots">0 / 60</span></div>
-        <div class="goal-track"><div class="goal-fill prolific-fill" id="goal-fill-shoots"></div></div>
-        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('shoots')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('shoots', 60)">+</button></div>
+    <div class="sc-row" id="sc-even">
+      <div class="sc-top">
+        <a class="sc-name" href="https://even-os.com/" target="_blank">Even ↗</a>
+        <span class="sc-sub">Acquisition</span>
+        <span class="sc-count" id="sc-even-count">0</span>
       </div>
-      <div class="goal-row">
-        <div class="goal-info"><span class="goal-label">Even-OS Users</span><span class="goal-val" id="goal-val-users">0 / 65</span></div>
-        <div class="goal-track"><div class="goal-fill even-os-fill" id="goal-fill-users"></div></div>
-        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('users')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('users', 65)">+</button></div>
+      <div class="sc-bar"><div class="sc-fill" id="sc-even-fill"></div><div class="sc-floor"></div></div>
+      <div class="sc-bottom">
+        <span class="sc-status" id="sc-even-status"></span>
+        <div class="sc-btns"><button onclick="bumpOutreach('even',-1)">−</button><button class="sc-plus" onclick="bumpOutreach('even',1)">+1</button></div>
       </div>
-      <div class="goal-row">
-        <div class="goal-info"><span class="goal-label">BLC Capital</span><span class="goal-val" id="goal-val-blc">$0 / $3,000</span></div>
-        <div class="goal-track"><div class="goal-fill blc-fill" id="goal-fill-blc"></div></div>
-        <div class="goal-actions"><input type="number" class="goal-input" placeholder="$" onchange="setGoalAmount('blc', this.value)" /></div>
+    </div>
+    <div class="sc-row" id="sc-blc">
+      <div class="sc-top">
+        <a class="sc-name" href="https://blc-os-production.up.railway.app/" target="_blank">Black Lab ↗</a>
+        <span class="sc-sub">Withdraw</span>
+        <span class="sc-count" id="sc-blc-count">0/5</span>
       </div>
-      <div class="goal-row">
-        <div class="goal-info"><span class="goal-label">$10K Challenge</span><span class="goal-val" id="goal-val-chal10">Day 26 / 100</span></div>
-        <div class="goal-track"><div class="goal-fill ten-fill" id="goal-fill-chal10" style="width:26%"></div></div>
-        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('chal10')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('chal10', 100)">+</button></div>
-      </div>
-      <div class="goal-row">
-        <div class="goal-info"><span class="goal-label">$5K Challenge</span><span class="goal-val" id="goal-val-chal5">Day 0 / 100</span></div>
-        <div class="goal-track"><div class="goal-fill five-fill" id="goal-fill-chal5"></div></div>
-        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('chal5')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('chal5', 100)">+</button></div>
+      <div class="sc-dots" id="sc-blc-dots"></div>
+      <div class="sc-bottom">
+        <span class="sc-status" id="sc-blc-status"></span>
+        <div class="sc-btns"><button id="sc-blc-reset" onclick="resetBlc()">Paid ✓</button><button onclick="bumpBlc(-1)">−</button><button class="sc-plus" onclick="bumpBlc(1)">+1 Day</button></div>
       </div>
     </div>
   </div>
@@ -1316,6 +1441,83 @@
     <div class="p5-truth">He who is faithful. Not he who succeeds — he who is faithful.</div>
   </div>
 
+  <!-- MANTRA TRIGGER -->
+  <button class="mantra-trigger" onclick="openMantra()">
+    <span class="mantra-trigger-icon">⚡</span>
+    <span>Trigger Response — tap when you need it</span>
+  </button>
+
+</div>
+
+<!-- DAILY PANEL -->
+<div class="panel" id="panel-daily">
+
+  <div class="daily-head">
+    <div class="date-nav">
+      <button id="prev-day" title="Previous day">‹</button>
+      <div id="current-date"></div>
+      <button id="next-day" title="Next day">›</button>
+    </div>
+
+    <div class="identity-banner">
+      <h3>⚙ Core Identity — Read Daily</h3>
+      <div class="identity-items">
+        <div class="identity-item">I execute whether I feel like it or not</div>
+        <div class="identity-item">I operate like a fund manager</div>
+        <div class="identity-item">I build systems, not moods</div>
+        <div class="identity-item">I move first, confidence follows</div>
+        <div class="identity-item">I stay aligned with God throughout the day</div>
+      </div>
+    </div>
+
+    <div class="score-bar">
+      <span class="score-label">Daily Score</span>
+      <div class="score-track"><div class="score-fill" id="score-fill"></div></div>
+      <span class="score-pct" id="score-pct">0%</span>
+    </div>
+  </div>
+
+  <!-- DEC 27 GOALS -->
+  <div class="goals-section">
+    <div class="goals-header">
+      <div class="goals-countdown-wrap">
+        <span class="goals-days" id="days-countdown">146</span>
+        <span class="goals-days-label">DAYS TO<br>DEC 27</span>
+      </div>
+      <div class="goals-title-wrap">
+        <div class="goals-eyebrow">ACTIVE GOALS</div>
+        <div class="goals-verse">Everything I write I reach — Hab 2:2</div>
+      </div>
+    </div>
+    <div class="goals-list">
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">Prolific Shoots</span><span class="goal-val" id="goal-val-shoots">0 / 60</span></div>
+        <div class="goal-track"><div class="goal-fill prolific-fill" id="goal-fill-shoots"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('shoots')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('shoots', 60)">+</button></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">Even-OS Users</span><span class="goal-val" id="goal-val-users">0 / 65</span></div>
+        <div class="goal-track"><div class="goal-fill even-os-fill" id="goal-fill-users"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('users')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('users', 65)">+</button></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">BLC Capital</span><span class="goal-val" id="goal-val-blc">$0 / $3,000</span></div>
+        <div class="goal-track"><div class="goal-fill blc-fill" id="goal-fill-blc"></div></div>
+        <div class="goal-actions"><input type="number" class="goal-input" placeholder="$" onchange="setGoalAmount('blc', this.value)" /></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">$10K Challenge</span><span class="goal-val" id="goal-val-chal10">Day 26 / 100</span></div>
+        <div class="goal-track"><div class="goal-fill ten-fill" id="goal-fill-chal10" style="width:26%"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('chal10')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('chal10', 100)">+</button></div>
+      </div>
+      <div class="goal-row">
+        <div class="goal-info"><span class="goal-label">$5K Challenge</span><span class="goal-val" id="goal-val-chal5">Day 0 / 100</span></div>
+        <div class="goal-track"><div class="goal-fill five-fill" id="goal-fill-chal5"></div></div>
+        <div class="goal-actions"><button class="goal-btn" onclick="decrementGoal('chal5')">−</button><button class="goal-btn goal-btn-add" onclick="incrementGoal('chal5', 100)">+</button></div>
+      </div>
+    </div>
+  </div>
+
   <!-- DAILY JOURNAL -->
   <div class="daily-journal">
     <div class="journal-header">
@@ -1324,12 +1526,6 @@
     </div>
     <textarea class="journal-textarea" id="daily-journal" placeholder="Write freely — a scripture, a thought, an intention, a declaration. This is yours."></textarea>
   </div>
-
-  <!-- MANTRA TRIGGER -->
-  <button class="mantra-trigger" onclick="openMantra()">
-    <span class="mantra-trigger-icon">⚡</span>
-    <span>Trigger Response — tap when you need it</span>
-  </button>
 
   <!-- FAITH -->
   <div class="pillar">
@@ -1607,7 +1803,7 @@ function saveSt(s) {
 function getDateKey(offset) {
   var d = new Date();
   d.setDate(d.getDate() + (offset||0));
-  return d.toISOString().split('T')[0];
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
 }
 function getState(dateKey) {
   try { return JSON.parse(localStorage.getItem('cls_' + dateKey) || '{}'); } catch(e) { return {}; }
@@ -1672,6 +1868,134 @@ function renderGoals() {
     if (valEl) valEl.textContent = g.prefix + val.toLocaleString() + ' / ' + g.prefix + g.target.toLocaleString();
   });
 }
+
+// ── NOW: SCORECARD ───────────────────────────────────────────────────────────
+var OUTREACH_FLOOR = 10, OUTREACH_TARGET = 50;
+function getNow() { try { return JSON.parse(localStorage.getItem('bf_now_' + getDateKey(0)) || '{}'); } catch(e) { return {}; } }
+function saveNow(n) { localStorage.setItem('bf_now_' + getDateKey(0), JSON.stringify(n)); }
+function bumpOutreach(v, d) {
+  var n = getNow();
+  n[v] = Math.max(0, (n[v] || 0) + d);
+  saveNow(n);
+  renderNow();
+}
+function getBlcDays() { return Math.min(5, Math.max(0, parseInt(localStorage.getItem('bf_blc_days'), 10) || 0)); }
+function bumpBlc(d) { localStorage.setItem('bf_blc_days', String(Math.min(5, Math.max(0, getBlcDays() + d)))); renderNow(); }
+function resetBlc() {
+  if (!confirm('Payout requested? This starts a new cycle at 0/5.')) return;
+  localStorage.setItem('bf_blc_days', '0');
+  renderNow();
+}
+
+function renderNow() {
+  var n = getNow();
+  ['prolific', 'even'].forEach(function(v) {
+    var c = n[v] || 0;
+    var status = c >= OUTREACH_TARGET ? '✓ Target hit. 50+ today.'
+      : c >= OUTREACH_FLOOR ? '✓ Floor met · ' + (OUTREACH_TARGET - c) + ' to 50'
+      : (OUTREACH_FLOOR - c) + ' to the floor of 10';
+    document.getElementById('sc-' + v + '-count').textContent = c;
+    document.getElementById('sc-' + v + '-fill').style.width = Math.min(c / OUTREACH_TARGET * 100, 100) + '%';
+    document.getElementById('sc-' + v + '-status').textContent = status;
+    document.getElementById('sc-' + v).classList.toggle('floor-met', c >= OUTREACH_FLOOR);
+  });
+
+  var k = getBlcDays();
+  var dots = '';
+  for (var i = 0; i < 5; i++) dots += '<div class="sc-dot' + (i < k ? ' on' : '') + '"></div>';
+  document.getElementById('sc-blc-dots').innerHTML = dots;
+  document.getElementById('sc-blc-count').textContent = k + '/5';
+  document.getElementById('sc-blc-status').textContent = k >= 5
+    ? 'Eligible if net is positive. Request before you trade.'
+    : '$150+ days this payout cycle';
+  document.getElementById('sc-blc').classList.toggle('eligible', k >= 5);
+  document.getElementById('sc-blc').classList.toggle('floor-met', k >= 5);
+
+  var s = n.sessions || 0;
+  document.getElementById('sessions-today').textContent = s ? '· ' + s + ' session' + (s === 1 ? '' : 's') + ' done' : '';
+}
+
+// ── NOW: FOCUS SESSION ───────────────────────────────────────────────────────
+var focusPick = { vertical: 'prolific', mins: 10 };
+var focusTick = null;
+var VERTICAL_NAMES = { prolific: 'Prolific', even: 'Even' };
+function getFocus() { try { return JSON.parse(localStorage.getItem('bf_focus') || 'null'); } catch(e) { return null; } }
+function setFocus(f) { if (f) localStorage.setItem('bf_focus', JSON.stringify(f)); else localStorage.removeItem('bf_focus'); }
+
+function pickFocus(kind, val) {
+  focusPick[kind] = val;
+  document.querySelectorAll('#focus-pick-' + (kind === 'mins' ? 'mins' : 'vertical') + ' .focus-opt').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.v === String(val));
+  });
+}
+
+function startFocus() {
+  setFocus({ vertical: focusPick.vertical, mins: focusPick.mins, endsAt: Date.now() + focusPick.mins * 60000, sent: 0 });
+  document.getElementById('focus-last').textContent = '';
+  renderFocus();
+}
+
+function focusPlus() {
+  var f = getFocus();
+  if (!f) return;
+  f.sent++;
+  setFocus(f);
+  bumpOutreach(f.vertical, 1);
+  document.getElementById('focus-sent').textContent = f.sent;
+  if (navigator.vibrate) navigator.vibrate(30);
+}
+
+function endFocus(completed) {
+  var f = getFocus();
+  if (!f) return;
+  setFocus(null);
+  if (completed || f.sent > 0) {
+    var n = getNow();
+    n.sessions = (n.sessions || 0) + 1;
+    saveNow(n);
+  }
+  document.getElementById('focus-last').textContent = completed
+    ? 'Session done · ' + f.sent + ' sent to ' + VERTICAL_NAMES[f.vertical] + '. Run it back?'
+    : (f.sent > 0 ? 'Ended · ' + f.sent + ' sent.' : '');
+  if (completed) focusDoneAlert(f);
+  renderFocus();
+  renderNow();
+}
+
+function focusDoneAlert(f) {
+  if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+  try {
+    var ctx = new (window.AudioContext || window.webkitAudioContext)();
+    var o = ctx.createOscillator(), g = ctx.createGain();
+    o.frequency.value = 880;
+    g.gain.setValueAtTime(0.2, ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.8);
+    o.connect(g); g.connect(ctx.destination);
+    o.start(); o.stop(ctx.currentTime + 0.8);
+  } catch(e) {}
+  if ('Notification' in window && Notification.permission === 'granted') {
+    try { new Notification('Session done', { body: f.sent + ' sent to ' + VERTICAL_NAMES[f.vertical] + '. Run it back?', icon: '/icon-192.png' }); } catch(e) {}
+  }
+}
+
+function renderFocus() {
+  var f = getFocus();
+  var card = document.getElementById('focus-card');
+  if (!f) {
+    card.classList.remove('running');
+    if (focusTick) { clearInterval(focusTick); focusTick = null; }
+    return;
+  }
+  var left = f.endsAt - Date.now();
+  if (left <= 0) { endFocus(true); return; }
+  card.classList.add('running');
+  document.getElementById('focus-live-label').textContent = VERTICAL_NAMES[f.vertical] + ' outreach · ' + f.mins + ' min';
+  document.getElementById('focus-sent').textContent = f.sent;
+  var secs = Math.ceil(left / 1000);
+  document.getElementById('focus-clock').textContent = Math.floor(secs / 60) + ':' + String(secs % 60).padStart(2, '0');
+  if (!focusTick) focusTick = setInterval(renderFocus, 1000);
+}
+document.addEventListener('visibilitychange', function() { if (!document.hidden) { renderFocus(); renderNow(); } });
 
 // ── POWER 5 ──────────────────────────────────────────────────────────────────
 var P5_KEYS = ['god','body','prolific','even-os','blacklab'];
@@ -2127,6 +2451,8 @@ renderDay(0);
 renderP5();
 renderDeposits();
 renderGoals();
+renderNow();
+renderFocus();
 
 
 
