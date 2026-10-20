@@ -655,6 +655,24 @@
   .daily-head { margin: -24px -24px 24px; }
 
   /* ── NOW ── */
+  .frame-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: none;
+    border: none;
+    border-left: 2px solid var(--gold);
+    color: var(--cream);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .frame-line span { color: var(--gold); font-style: normal; font-size: 18px; }
   .now-eyebrow {
     font-size: 9px;
     letter-spacing: 0.3em;
@@ -1089,6 +1107,7 @@
   .power5-eyebrow{font-size:11px!important;letter-spacing:0.35em!important;font-weight:700!important;}
   .power5-grade{font-size:36px!important;}
   .mantra-text{font-size:clamp(22px,5vw,34px)!important;font-weight:800!important;line-height:1.4!important;color:#fff!important;}
+  .mantra-text.long{font-size:clamp(17px,4.4vw,23px)!important;font-weight:600!important;line-height:1.55!important;}
   .mantra-context{font-size:13px!important;}
   .mantra-label{font-size:11px!important;letter-spacing:0.4em!important;font-weight:700!important;}
   .mantra-trigger{font-size:11px!important;letter-spacing:0.25em!important;padding:14px 16px!important;font-weight:700!important;border:1px solid rgba(0,133,202,0.4)!important;}
@@ -1323,6 +1342,8 @@
 
 <!-- NOW PANEL -->
 <div class="panel active" id="panel-now">
+
+  <button class="frame-line" onclick="openFrame()">Today's decisions. Integrity. Make it real. <span>›</span></button>
 
   <!-- FOCUS SESSION -->
   <div class="focus-card" id="focus-card">
@@ -2158,6 +2179,8 @@ function renderDeposits() {
 
 // ── MANTRAS ──────────────────────────────────────────────────────────────────
 var MANTRAS = [
+  {label:"Frame",text:"The only thing that really matters are the decisions of today. Do not spend a lot of time worrying about yesterday, because it no longer exists, and worrying about tomorrow, because it doesn't exist either. The only thing that really matters is everything that you do today.",context:"October 13. God gave you this one."},
+  {label:"Frame",text:"Integrity. Everything is a decision; we get a series of them throughout the day. Your current reality is a microcosm of the decisions you make. Each decision carries consequences, good or bad. Effective and efficient, but integrity: do the right thing instead of apologizing, no cutting corners.",context:"October 14. This one goes with it. Make it real."},
   {label:"Core 5",text:"I am aligned.",context:"Drop shoulders. Slow exhale. Use for: reset state."},
   {label:"Core 5",text:"This is what growth feels like.",context:"Lean into the discomfort. Use when: feeling resistance."},
   {label:"Core 5",text:"Not today. I do not move like that anymore.",context:"Jaw set. Stillness. Use when: the urge hits."},
@@ -2298,6 +2321,12 @@ function openMantra() {
   var overlay = document.getElementById('mantra-overlay');
   if (overlay) overlay.classList.add('open');
 }
+function openFrame() {
+  for (var i = 0; i < MANTRAS.length; i++) { if (MANTRAS[i].label === 'Frame') { mantraIndex = i; break; } }
+  renderMantra();
+  var overlay = document.getElementById('mantra-overlay');
+  if (overlay) overlay.classList.add('open');
+}
 function closeMantra() { var o = document.getElementById('mantra-overlay'); if(o) o.classList.remove('open'); }
 function renderMantra() {
   var m = MANTRAS[mantraIndex];
@@ -2306,7 +2335,7 @@ function renderMantra() {
   var cEl = document.getElementById('mantra-context');
   var dots = document.getElementById('mantra-dots');
   if (lEl) lEl.textContent = m.label;
-  if (tEl) tEl.textContent = m.text;
+  if (tEl) { tEl.textContent = m.text; tEl.classList.toggle('long', m.text.length > 110); }
   if (cEl) cEl.textContent = m.context;
   if (dots) {
     dots.innerHTML = '';
